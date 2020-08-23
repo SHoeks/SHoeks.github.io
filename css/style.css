@@ -577,8 +577,8 @@ li:before{content:'';display:inline-block;width:12px;height:1px;background:#c7ac
 @media (max-width:640px){.LOGO_STATIC{width: 110px;padding-top: 0px}}
 	
 /* Image containers with fade and scaling */
-.IMG_wpad{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden; border: 1% solid red;}
-.IMG_npad{ float: left; width: 30%; visibility: hidden;}
+.IMG_wpad{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden; border: 1% solid red; background: rgba(40, 40, 40, 0.95);}
+.IMG_npad{ float: left; width: 30%; visibility: hidden;background: rgba(40, 40, 40, 0.95);}
 
 @media (max-width:768px){
     .IMG_wpad{ float: left; width: 100%; margin-right: 0%; margin-bottom: 5%;visibility: hidden;} 
@@ -590,8 +590,8 @@ li:before{content:'';display:inline-block;width:12px;height:1px;background:#c7ac
 }
 
 /* Images direcrly loaded when page loads */
-.IMG_wpad_loaded{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden; border: 1% solid red;}
-.IMG_npad_loaded{ float: left; width: 30%; visibility: hidden;}
+.IMG_wpad_loaded{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden; border: 1% solid red;background: rgba(40, 40, 40, 0.95);}
+.IMG_npad_loaded{ float: left; width: 30%; visibility: hidden;background: rgba(40, 40, 40, 0.95);}
 
 @media (max-width:768px){
     .IMG_wpad_loaded{ float: left; width: 100%; margin-right: 0%; margin-bottom: 5%;visibility: hidden;} 
@@ -603,8 +603,8 @@ li:before{content:'';display:inline-block;width:12px;height:1px;background:#c7ac
 }
 
 /* First 2 images always direcrly loaded when page loads */
-.IMG_wpad_loaded1{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden; border: 1% solid red;}
-.IMG_npad_loaded1{ float: left; width: 30%; visibility: hidden;}
+.IMG_wpad_loaded1{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden;background: rgba(40, 40, 40, 0.95);}
+.IMG_npad_loaded1{ float: left; width: 30%; visibility: hidden; background: rgba(40, 40, 40, 0.95);}
 
 @media (max-width:768px){
     .IMG_wpad_loaded1{ float: left; width: 100%; margin-right: 0%; margin-bottom: 5%;visibility: hidden;} 
@@ -614,8 +614,8 @@ li:before{content:'';display:inline-block;width:12px;height:1px;background:#c7ac
     .IMG_wpad_loaded1{ float: left; width: 100%; margin-right: 0%;visibility: hidden;} 
     .IMG_npad_loaded1{ float: left; width: 100%;visibility: hidden;}
 }
-.IMG_wpad_loaded2{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden; border: 1% solid red;}
-.IMG_npad_loaded2{ float: left; width: 30%; visibility: hidden;}
+.IMG_wpad_loaded2{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden; border: 1% solid red;background: rgba(40, 40, 40, 0.95);}
+.IMG_npad_loaded2{ float: left; width: 30%; visibility: hidden; background: rgba(40, 40, 40, 0.95);}
 
 @media (max-width:768px){
     .IMG_wpad_loaded2{ float: left; width: 100%; margin-right: 0%; margin-bottom: 5%;visibility: hidden;} 
@@ -649,9 +649,8 @@ li:before{content:'';display:inline-block;width:12px;height:1px;background:#c7ac
 @media (max-width:768px){#GoToTop{margin-left: 46%;margin-right: 46%;width: 8%;}}
 @media (max-width:640px){#GoToTop{margin-left: 46%;margin-right: 46%;width: 8%;}}
 	
-/* Image border */
-img {border: 0px solid rgba(40, 40, 40, 0.95);}
-
+/* Image border size */
+img {margin: 0.5% 0.5% 0.5% 0.5%; width:99%;} 
 
 
 /** ---
