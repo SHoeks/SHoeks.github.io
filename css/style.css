@@ -650,7 +650,7 @@ li:before{content:'';display:inline-block;width:12px;height:1px;background:#c7ac
 @media (max-width:640px){#GoToTop{margin-left: 46%;margin-right: 46%;width: 8%;}}
 	
 /* Image border */
-img {border: 3px solid rgba(40, 40, 40, 0.95);}
+img {border: 0px solid rgba(40, 40, 40, 0.95);}
 
 
 
