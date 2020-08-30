@@ -576,7 +576,7 @@ li:before{content:'';display:inline-block;width:12px;height:1px;background:#c7ac
 @media (max-width:768px){.LOGO_STATIC{width: 130px;padding-top: 6px}}
 @media (max-width:640px){.LOGO_STATIC{width: 110px;padding-top: 0px}}
 	
-/* Image containers with fade and scaling */
+/* ----------------  Image containers with fade and scaling ------------------------------- */
 .IMG_wpad{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden; border: 1% solid red; background: rgba(40, 40, 40, 0.95);}
 .IMG_npad{ float: left; width: 30%; visibility: hidden;background: rgba(40, 40, 40, 0.95);}
 
@@ -626,6 +626,61 @@ li:before{content:'';display:inline-block;width:12px;height:1px;background:#c7ac
     .IMG_npad_loaded2{ float: left; width: 100%;visibility: hidden;}
 }
 
+/* ---------------- end Image containers with fade and scaling ------------------------- */
+
+
+/* !!!!!!!!!!!!!! Image containers colorwork with fade and scaling !!!!!!!!!!!!!!!!!!!!! */
+.IMG_cwpad{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden; border: 1% solid red; background: #141d1c;}
+.IMG_cnpad{ float: left; width: 30%; visibility: hidden;background: #141d1c;}
+
+@media (max-width:768px){
+    .IMG_cwpad{ float: left; width: 100%; margin-right: 0%; margin-bottom: 5%;visibility: hidden;} 
+    .IMG_cnpad{ float: left; width: 100%; margin-bottom: 5%;visibility: hidden;}
+}
+@media (max-width:640px){
+    .IMG_cwpad{ float: left; width: 100%; margin-right: 0%;visibility: hidden;} 
+    .IMG_cnpad{ float: left; width: 100%;visibility: hidden;}
+}
+
+/* Images direcrly loaded when page loads */
+.IMG_cwpad_loaded{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden; border: 1% solid red;background: #141d1c;}
+.IMG_cnpad_loaded{ float: left; width: 30%; visibility: hidden;background: #141d1c;}
+
+@media (max-width:768px){
+    .IMG_cwpad_loaded{ float: left; width: 100%; margin-right: 0%; margin-bottom: 5%;visibility: hidden;} 
+    .IMG_cnpad_loaded{ float: left; width: 100%; margin-bottom: 5%;visibility: hidden;}
+}
+@media (max-width:640px){
+    .IMG_cwpad_loaded{ float: left; width: 100%; margin-right: 0%;visibility: hidden;} 
+    .IMG_cnpad_loaded{ float: left; width: 100%;visibility: hidden;}
+}
+
+/* First 2 images always direcrly loaded when page loads */
+.IMG_cwpad_loaded1{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden;background: #141d1c;}
+.IMG_cnpad_loaded1{ float: left; width: 30%; visibility: hidden; background: #141d1c;}
+
+@media (max-width:768px){
+    .IMG_cwpad_loaded1{ float: left; width: 100%; margin-right: 0%; margin-bottom: 5%;visibility: hidden;} 
+    .IMG_cnpad_loaded1{ float: left; width: 100%; margin-bottom: 5%;visibility: hidden;}
+}
+@media (max-width:640px){
+    .IMG_cwpad_loaded1{ float: left; width: 100%; margin-right: 0%;visibility: hidden;} 
+    .IMG_cnpad_loaded1{ float: left; width: 100%;visibility: hidden;}
+}
+.IMG_cwpad_loaded2{ float: left; width: 30%; margin-right: 5%; margin-bottom: 5%;visibility: hidden; border: 1% solid red;background: #141d1c;}
+.IMG_cnpad_loaded2{ float: left; width: 30%; visibility: hidden; background: #141d1c;}
+
+@media (max-width:768px){
+    .IMG_cwpad_loaded2{ float: left; width: 100%; margin-right: 0%; margin-bottom: 5%;visibility: hidden;} 
+    .IMG_cnpad_loaded2{ float: left; width: 100%; margin-bottom: 5%;visibility: hidden;}
+}
+@media (max-width:640px){
+    .IMG_cwpad_loaded2{ float: left; width: 100%; margin-right: 0%;visibility: hidden;} 
+    .IMG_cnpad_loaded2{ float: left; width: 100%;visibility: hidden;}
+}
+/* !!!!!!!!!!!!!! Image containers colorwork with fade and scaling !!!!!!!!!!!!!!!!!!!!! */
+
+
 /* GoToTop botton */
 #GoToTop {
     z-index: 99;
@@ -640,15 +695,38 @@ li:before{content:'';display:inline-block;width:12px;height:1px;background:#c7ac
     margin-right: 48%;
     width: 4%;
   }
+
+
+  #GoToTop_colorwork {
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(40, 40, 40, 0.0);;
+    color: rgba(40, 40, 40, 0.95);
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 48%;
+    margin-right: 48%;
+    width: 4%;
+  }
   
   #GoToTop:hover {
     background-color: rgba(40, 40, 40, 0.1);
     color: white;
   }
 
+  #GoToTop_colorwork:hover {
+    background-color: rgba(40, 40, 40, 0.7);
+    color: black;
+  }
+    
 @media (max-width:768px){#GoToTop{margin-left: 46%;margin-right: 46%;width: 8%;}}
 @media (max-width:640px){#GoToTop{margin-left: 46%;margin-right: 46%;width: 8%;}}
-	
+
+@media (max-width:768px){#GoToTop_colorwork{margin-left: 46%;margin-right: 46%;width: 8%;}}
+@media (max-width:640px){#GoToTop_colorwork{margin-left: 46%;margin-right: 46%;width: 8%;}}
+
 /* Image border size */
 img {margin: 0.5% 0.5% 0.5% 0.5%; width:99%;} 
 
