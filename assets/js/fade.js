@@ -1,5 +1,6 @@
 //---------------------------------------- bwmainwork
 $(document).ready(function() {
+
     $(window).scroll(function() {
         $('.IMG_wpad').each(function(){
         var imagePos = $(this).offset().top;
@@ -20,9 +21,8 @@ $(document).ready(function() {
             }
         });
     });
-});
 
-$(document).ready(function() {
+ 
     $('.IMG_npad_loaded1').each(function(){
         $(this).addClass("fadeIn");
     });
@@ -66,11 +66,11 @@ $(document).ready(function() {
             });
         });
     }
-});
+
 //---------------------------------------- end bwmainwork
 
 //---------------------------------------- colorwork
-$(document).ready(function() {
+
     $(window).scroll(function() {
         $('.IMG_cwpad').each(function(){
         var imagePos = $(this).offset().top;
@@ -91,9 +91,7 @@ $(document).ready(function() {
             }
         });
     });
-});
 
-$(document).ready(function() {
     $('.IMG_cnpad_loaded1').each(function(){
         $(this).addClass("fadeIn");
     });
