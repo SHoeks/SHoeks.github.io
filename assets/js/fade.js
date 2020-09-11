@@ -1,25 +1,26 @@
 //---------------------------------------- bwmainwork
-$(window).scroll(function() {
-    $('.IMG_wpad').each(function(){
-    var imagePos = $(this).offset().top;
+$(document).ready(function() {
+    $(window).scroll(function() {
+        $('.IMG_wpad').each(function(){
+        var imagePos = $(this).offset().top;
 
-    var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+900) {
-            $(this).addClass("fadeIn");
-        }
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+900) {
+                $(this).addClass("fadeIn");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $('.IMG_npad').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+900) {
+                $(this).addClass("fadeIn");
+            }
+        });
     });
 });
-$(window).scroll(function() {
-    $('.IMG_npad').each(function(){
-    var imagePos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+900) {
-            $(this).addClass("fadeIn");
-        }
-    });
-});
-
 
 $(document).ready(function() {
     $('.IMG_npad_loaded1').each(function(){
@@ -69,27 +70,28 @@ $(document).ready(function() {
 //---------------------------------------- end bwmainwork
 
 //---------------------------------------- colorwork
-$(window).scroll(function() {
-    $('.IMG_cwpad').each(function(){
-    var imagePos = $(this).offset().top;
+$(document).ready(function() {
+    $(window).scroll(function() {
+        $('.IMG_cwpad').each(function(){
+        var imagePos = $(this).offset().top;
 
-    var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+900) {
-            $(this).addClass("fadeIn");
-        }
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+900) {
+                $(this).addClass("fadeIn");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $('.IMG_cnpad').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+900) {
+                $(this).addClass("fadeIn");
+            }
+        });
     });
 });
-$(window).scroll(function() {
-    $('.IMG_cnpad').each(function(){
-    var imagePos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+900) {
-            $(this).addClass("fadeIn");
-        }
-    });
-});
-
 
 $(document).ready(function() {
     $('.IMG_cnpad_loaded1').each(function(){
