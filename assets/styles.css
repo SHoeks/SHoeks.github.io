@@ -1,0 +1,92 @@
+body {background-color: black;}
+body::-webkit-scrollbar {display: none;}
+img {margin-bottom: 2%; transition: all 1s;}
+img:hover {transform: scale(1.0); cursor: pointer;}
+#logo:hover {transform: scale(1.0); cursor: default;}
+
+#logo {height: 90%; z-index: 2;}
+.logo_div {z-index: 2;	position: absolute; height: 280px; padding-left: 30px; padding-top: 30px;}
+.container {z-index: 1; position: absolute;left: 0px;display: flex;flex-wrap: wrap;justify-content: center;width: 100%; top:200px; padding-bottom: 50px;}
+.img_show {z-index: 1; left: 0px;display: flex;flex-wrap: wrap;justify-content: center;width: 100%;}
+
+@media (max-width: 950px) {.logo_div {height: 200px; padding-top: 5px;padding-left: 20px;} .container {top: 140px;}}
+
+@media (max-width: 767px) {.logo_div {height: 180px; padding-top: 1px;padding-left: 10px;} .container {top: 120px;}}
+
+/* layout width > 767px ---- */
+#img1 {width: 31vw; height: 31vw; margin-right: 1%;}
+#img2 {width: 31vw; height: 31vw; margin-right: 1%;}
+#img3 {width: 31vw; height: 31vw;} /* 95% total */
+/* ---- */
+#img4 {width: 23vw; height: 23vw; margin-right: 1%;}
+#img5 {width: 23vw; height: 23vw; margin-right: 1%;}
+#img6 {width: 23vw; height: 23vw; margin-right: 1%;}
+#img7 {width: 23vw; height: 23vw;} /* 95% total */
+/* ---- */
+
+@media (max-width: 767px) {
+	/* layout width < 767px ---- */
+	#img1 {width: 47vw; height: 47vw; margin-right: 1%;}
+	#img2 {width: 47vw; height: 47vw;} /* 95% total */
+	/* ---- */
+	#img3 {width: 31vw; height: 31vw; margin-right: 1%;}
+	#img4 {width: 31vw; height: 31vw; margin-right: 1%;}
+	#img5 {width: 31vw; height: 31vw;} /* 95% total */
+	/* ---- */
+	#img6 {width: 31vw; height: 31vw; margin-right: 1%;}
+	#img7 {width: 31vw; height: 31vw; margin-right: 1%;}
+	/* ---- */
+}
+
+#img_description {
+	font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.3rem;
+	font-weight: 400;
+	padding-bottom: 40px;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'IBM Plex Mono';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: local('IBM Plex Mono Italic'), local('IBMPlexMono-Italic'), url(../fonts/f1.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+	font-family: 'IBM Plex Mono';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: local('IBM Plex Mono Italic'), local('IBMPlexMono-Italic'), url(../fonts/f2.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* vietnamese */
+  @font-face {
+	font-family: 'IBM Plex Mono';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: local('IBM Plex Mono Italic'), local('IBMPlexMono-Italic'), url(../fonts/f3.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+	font-family: 'IBM Plex Mono';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: local('IBM Plex Mono Italic'), local('IBMPlexMono-Italic'), url(../fonts/f4.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+	font-family: 'IBM Plex Mono';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: local('IBM Plex Mono Italic'), local('IBMPlexMono-Italic'), url(../fonts/f5.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
