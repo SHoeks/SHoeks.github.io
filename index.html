@@ -11,25 +11,22 @@
 
 <body>
 
-<div id="logo_div" class="logo_div">
-	<img id="logo" src="assets/logo-white.svg">
-</div>
+<div id="logo_div" class="logo_div"><img id="logo" src="assets/logo-white.svg"></div>
 
-<div id="img_show" class="img_show" style="display: none; text-align: center; height: auto;" onclick="hideIMG()">
-	<img id="img_show_img" style="margin-left: auto; margin-right: auto; margin-bottom: 0px; margin-top: 25px; max-width: 90%;">
-	<p id="img_description" style="text-align:center; margin-top: 10px; color: rgba(255, 255, 255, 0.5); font-style: italic;">Image Description</p>
+<div id="overlay" onclick="off()">
+	<img id="img_show">
+	<p id="img_description">Image Description</p>
 </div>
 
 <div id="img_container" class="container">
-	<img id="img1" src="images/australia-cave.png" onclick="showIMG('images/australia-cave.png','Passage into the unknown');">
-	<img id="img2" src="images/australia-waterfall2.png" onclick="showIMG('images/australia-waterfall2.png','Beyond the glimmer of another world');">
-	<img id="img3" src="images/australia-waterfall1.png" onclick="showIMG('images/australia-waterfall1.png','Here we may reign secure');">
-	<img id="img4" src="images/bigsur.png" onclick="showIMG('images/bigsur.png','There is none else walking');">
-	<img id="img5" src="images/australia-waterfall-dry.png" onclick="showIMG('images/australia-waterfall-dry.png','I heard the dingoes cry');">
-	<img id="img6" src="images/norway-waterfall1.png" onclick="showIMG('images/norway-waterfall1.png','The pathway to the hidden falls');">
-	<img id="img7" src="images/bosnia.png" onclick="showIMG('images/bosnia.png','Smooth it glides upon its travel');">
+	<img id="img1" src="images/australia-cave.png" onclick="on('images/australia-cave.png','Passage into the unknown');">
+	<img id="img2" src="images/australia-waterfall2.png" onclick="on('images/australia-waterfall2.png','Beyond the glimmer of another world');">
+	<img id="img3" src="images/australia-waterfall1.png" onclick="on('images/australia-waterfall1.png','Here we may reign secure');">
+	<img id="img4" src="images/bigsur.png" onclick="on('images/bigsur.png','There is none else walking');">
+	<img id="img5" src="images/australia-waterfall-dry.png" onclick="on('images/australia-waterfall-dry.png','I heard the dingoes cry');">
+	<img id="img6" src="images/norway-waterfall1.png" onclick="on('images/norway-waterfall1.png','The pathway to the hidden falls');">
+	<img id="img7" src="images/bosnia.png" onclick="on('images/bosnia.png','Smooth it glides upon its travel');">
 </div>
-
 
 </body>
 </html>

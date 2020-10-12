@@ -1,19 +1,11 @@
-var scrollposition = window.scrollY;
-console.log(scrollposition)
-
-function showIMG(IMG,TEXT){
-    scrollposition = window.scrollY;
-    console.log(scrollposition)
-    document.getElementById("logo_div").style.display = "none";
-    document.getElementById("img_container").style.display = "none";
-    document.getElementById("img_show_img").src = IMG;
+function on(IMG,TEXT) {
+    document.getElementById("img_show").src = IMG;
     document.getElementById("img_description").innerHTML = TEXT;
-    document.getElementById("img_show").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("logo").style.opacity = 0.5;
 }
-function hideIMG(){
-    document.getElementById("logo_div").style.display = "block";
-    document.getElementById("img_container").style.display = "block"
-    document.getElementById("img_show").style.display = "none";
-    console.log(scrollposition)
-    window.scrollTo(0, scrollposition);
+  
+function off() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("logo").style.opacity = 1.0;
 }
