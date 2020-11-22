@@ -9,11 +9,3 @@ function off() {
     document.getElementById("overlay").style.display = "none";
     document.getElementById("logo").style.opacity = 1.0;
 }
-
-
-const appHeight = () => {
-    const doc = document.documentElement
-    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
-}
-window.addEventListener('resize', appHeight)
-appHeight()
