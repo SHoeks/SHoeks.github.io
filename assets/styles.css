@@ -52,7 +52,7 @@ img:hover {cursor: pointer;}
 }
 /* Landscape */
 @media screen and (orientation:landscape) {
-	#img_show {margin-top: 5vh; height: 90vh; width: 90vh;}
+	#img_show {margin-top: 3vh; height: 90vh; width: 90vh;}
 	#img_description {font-size: 2vh;}
 }
 
