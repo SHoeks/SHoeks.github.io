@@ -1,0 +1,54 @@
+/* general */
+body {background-color: black;}
+body::-webkit-scrollbar {display: none;}
+img {margin-bottom: 1%; transition: all 1s;}
+img:hover {cursor: pointer;}
+#logo:hover { cursor: default;}
+#logo {height: 90%; z-index: 2;}
+.logo_div {z-index: 2;	position: absolute; height: 280px; 
+	padding-left: 30px; padding-top: 30px;}
+.container {z-index: 1; position: absolute;left: 0px;display: flex;
+	flex-wrap: wrap;justify-content: center;width: 100%; 
+	top:200px; padding-bottom: 50px;}
+
+/* logo responsive */
+@media (max-width: 950px) {
+	.logo_div {height: 200px; padding-top: 5px;padding-left: 20px;} 
+	.container {top: 140px;}
+}
+@media (max-width: 767px) {
+	.logo_div {height: 180px; padding-top: 1px;padding-left: 10px;} 
+	.container {top: 120px;}
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* wide window (>767px) - 3 images per row */
+#img1 {width: 31vw; height: 31vw; margin-right: 1%;}
+#img2 {width: 31vw; height: 31vw; margin-right: 1%;}
+#img3 {width: 31vw; height: 31vw;} /* 95% total */
+
+/* wide window (>767px) - 4 images per row */
+#img4 {width: 23vw; height: 23vw; margin-right: 1%;}
+#img5 {width: 23vw; height: 23vw; margin-right: 1%;}
+#img6 {width: 23vw; height: 23vw; margin-right: 1%;}
+#img7 {width: 23vw; height: 23vw;} /* 95% total */
+
+/* wide window (>767px) - 4 images per row */
+#img8 {width: 23vw; height: 23vw; margin-right: 1%;}
+
+@media (max-width: 767px) {
+	/* narrow window (<767px) - 2 images per row */
+	#img1 {width: 47vw; height: 47vw; margin-right: 1%;}
+	#img2 {width: 47vw; height: 47vw;} /* 95% total */
+	
+	/* narrow window (<767px) - 3 images per row */
+	#img3 {width: 31vw; height: 31vw; margin-right: 1%;}
+	#img4 {width: 31vw; height: 31vw; margin-right: 1%;}
+	#img5 {width: 31vw; height: 31vw;} /* 95% total */
+	
+	/* narrow window (<767px) - 3 images per row */
+	#img6 {width: 31vw; height: 31vw; margin-right: 1%;}
+	#img7 {width: 31vw; height: 31vw; margin-right: 1%;}
+	#img8 {width: 31vw; height: 31vw;} /* 95% total */
+}
