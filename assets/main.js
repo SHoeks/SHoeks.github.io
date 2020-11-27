@@ -59,9 +59,9 @@ function prev() {
 function set_image_in_overlay(dir,n) {
     console.log(dir);
     document.getElementById("img_show").src = dir + data[n][0];
-    document.getElementById("img_description").innerHTML = data[n][1];
     document.getElementById("overlay").style.display = "block";
     document.getElementById("logo").style.opacity = 0.5;
+    document.getElementById("img_description").innerHTML = data[n][1];
 }
 
 // function for updating the prev and next indices
