@@ -15,12 +15,15 @@ function on(n) {
     var dir = get_quality(); // get correct quality dir
     set_image_in_overlay(dir,n); // set the image
     update_prev_nxt(n); // update prev and nxt indices
+    
 }
 
 // return to main page, turn off overlay
 function off() {
     document.getElementById("overlay").style.display = "none";
     document.getElementById("logo").style.opacity = 1.0;
+    document.getElementById("img_show").style.opacity = 0.0;
+    document.getElementById("img_show").src = "none";
 }
 
 // set next image in overlay
@@ -45,10 +48,14 @@ function prev() {
 
 function set_image_in_overlay(dir,n) {
     console.log(dir);
+    document.getElementById("img_description").style.opacity = 0.0; // fade out image description
+    document.getElementById("img_show").style.opacity = 0.0; // fade out image
     document.getElementById("img_show").src = dir + data[n][0];
     document.getElementById("overlay").style.display = "block";
     document.getElementById("logo").style.opacity = 0.5;
     document.getElementById("img_description").innerHTML = data[n][1];
+    document.getElementById("img_show").style.opacity = 1.0; // fade in image
+    document.getElementById("img_description").style.opacity = 1.0; // fade in image description
 }
 
 // function for updating the prev and next indices
