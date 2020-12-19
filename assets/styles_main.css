@@ -9,8 +9,8 @@ img:hover {cursor: pointer;}
 .container {z-index: 1; position: absolute;left: 0px;display: flex; flex-wrap: wrap; justify-content: center;width: 100%; top:250px; padding-bottom: 50px;}
 
 /* tab */
-.tab {overflow: hidden;width: 265px;top: 225px;left: calc((100vw - 265px)/2);position: absolute;z-index: 50;}
-.tab button {float: left;border: none;outline: none;cursor: pointer;transition: 0.3s;font-size: 14px;font-family: 'IBM Plex Mono', monospace; background-color:rgb(0,0,0,0); color: rgb(138, 138, 138)}
+.tab {overflow: hidden;width: 100%;top: 225px;left: 0px;position: absolute;z-index: 50;display: flex;justify-content: center;}
+.tab button {border: none;outline: none;cursor: pointer;transition: 0.3s;font-size: 14px;font-family: 'IBM Plex Mono', monospace; background-color:rgb(0,0,0,0); color: rgb(138, 138, 138)}
 .tab button:hover {color: white;}
 .tab button.active {color:white;}
 
@@ -23,7 +23,7 @@ img:hover {cursor: pointer;}
 #loadmore_btn:hover {cursor: pointer; opacity: 0.8;}
 
 /* test indicator */
-#test_div_scal{overflow: hidden;background-color: black;width: 10px; height: 10px; top: 10px;left: 10px;position: absolute;z-index: 100;display: inline;}
+#test_div_scal{overflow: hidden;background-color: black;width: 40px; height: 15px; top: 10px;left: 10px;position: absolute;z-index: 100;display: inline;}
 
 /* image grid --------------------------------- */
 
@@ -39,30 +39,18 @@ img:hover {cursor: pointer;}
 	.logo_div {z-index: 2;	position: absolute; height: 55vw; padding-left: calc((100vw - 227px)/2); padding-top: 10px; width: 200px; overflow: visible; height: 40px}
 	#logo {width: 100%; z-index: 2;}
 	#test_div_scal {background-color: blue;}
-	.tab {top: 135px;width: 233px;left: calc((100vw - 237px)/2)}	 
+	.tab {top: 135px;}	 
 	.tab button {font-size: 12px;}
-	@media (pointer:none), (pointer:coarse) { 
-		.tab {top: 135px;width: 50vw;left: 25vw;}	 
-		.tab button {font-size: 2.71vw;}
-		#test_div_scal {background-color: white;}
-		.tab button{padding-right: 1vw; padding-left: 1vw;}
-	}
 }
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
-	.container {top: 240px ;padding-left: 2vw; padding-right: 2vw; width: 96vw;}
+	.container {top: 241px ;padding-left: 2vw; padding-right: 2vw; width: 96vw;}
 	.img_grid{width: 46vw; height: 46vw; margin-left: 1vw; margin-right: 1vw; margin-bottom: 2vw;}
 	.logo_div {z-index: 2;	position: absolute; padding-left: calc((100vw - 324px)/2); padding-top: 30px; width: 310px; overflow: visible; height: 130px}
 	#logo {width: 100%; z-index: 2;}
 	#test_div_scal {background-color: orange;}
-	.tab {top: 215px;width: 265px;left: calc((100vw - 267px)/2)}
-	.tab button {font-size: 14px;}
-	@media (pointer:none), (pointer:coarse) { 
-		.tab {top: 215px;width: 60vw;left: 25vw;}	 
-		.tab button {font-size: 2.68vw;}
-		#test_div_scal {background-color: teal;}
-		.tab button{padding-right: 1vw; padding-left: 1vw;}
-	}
+	.tab {top: 215px;}
+	.tab button {font-size: 12.5px;}
 }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 	 
 	.container {top:252px;padding-left: 2vw; padding-right: 2vw; width: 96vw;}
@@ -70,14 +58,8 @@ img:hover {cursor: pointer;}
 	.logo_div {padding-left: calc((100vw - 366px)/2); width: 360px; padding-top: 15px; height: 160px; overflow: visible; } 
 	#logo {width: 100%; z-index: 2;}
 	#test_div_scal {background-color: purple;}
-	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2)}	
+	.tab {top: 225px;}	
 	.tab button {font-size: 14px;}
-	@media (pointer:none), (pointer:coarse) { 
-		.tab {top: 225px;width: 60vw;left: 30vw;}	 
-		.tab button {font-size: 2.1vw;}
-		#test_div_scal {background-color: royalblue;}
-		.tab button{padding-right: 1vw; padding-left: 1vw;}
-	}
 }
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
 	.container {top: 195px;padding-left: 1vw; padding-right: 1vw; width: 98vw;}
@@ -85,14 +67,8 @@ img:hover {cursor: pointer;}
 	.logo_div {padding-left: calc((100vw - 284px)/2); width: 280px; padding-top: 5px; height: 150px;overflow: visible; } 
 	#logo {width: 100%; z-index: 2;}
 	#test_div_scal {background-color: pink;}	
-	.tab {top: 170px;width: 265px;left: calc((100vw - 265px)/2)}
+	.tab {top: 170px;}
 	.tab button {font-size: 14px;}
-	@media (pointer:none), (pointer:coarse) { 
-		.tab {top: 170px;width: 60vw;left: 35vw;}	 
-		.tab button {font-size: 1.4vw;}
-		#test_div_scal {background-color: palevioletred;}
-		.tab button{padding-right: 1vw; padding-left: 1vw;}
-	}
 }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 	.container {top:254px;padding-left: 1vw; padding-right: 1vw; width: 98vw;}
@@ -100,14 +76,8 @@ img:hover {cursor: pointer;}
 	.logo_div {padding-left: calc((100vw - 384px)/2); width: 380px; padding-top: 5px;height: 180px;overflow: visible; } 
 	#logo {width: 100%; z-index: 2;}
 	#test_div_scal {background-color: yellow;} 
-	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2)}
+	.tab {top: 225px;}
 	.tab button {font-size: 14px;}	
-	@media (pointer:none), (pointer:coarse) { 
-		.tab {top: 225px;width: 60vw;left: 35.5vw;}	 
-		.tab button {font-size: 1.4vw;}
-		#test_div_scal {background-color: yellowgreen;}
-		.tab button{padding-right: 1vw; padding-left: 1vw;}
-	}
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
 	.container {top:254px;padding-left: 1vw; padding-right: 1vw; width: 98vw;}
@@ -115,14 +85,8 @@ img:hover {cursor: pointer;}
 	.logo_div {padding-left: calc((100vw - 384px)/2); width: 380px; padding-top: 5px;height: 170px;overflow: visible; } 
 	#logo {width: 100%; z-index: 2;}
 	#test_div_scal {background-color: red;} 
-	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2);}	
+	.tab {top: 225px;}	
 	.tab button {font-size: 14px;}
-	@media (pointer:none), (pointer:coarse) { 
-		.tab {top: 225px;width: 60vw;left: 36.5vw;}	 
-		.tab button {font-size: 1.2vw;}
-		#test_div_scal {background-color:whitesmoke;}
-		.tab button{padding-right: 1vw; padding-left: 1vw;}
-	}
 }
 @media (min-width:1281px) { /* laptops and desktops */ 
 	.container {top:260px;padding-left: calc((100vw - 1250px)/2); padding-right: calc((100vw - 1250px)/2); width: 1250px;}
@@ -130,7 +94,7 @@ img:hover {cursor: pointer;}
 	.logo_div {padding-left: calc((100vw - 384px)/2); width: 380px; padding-top: 5px; height: 210px; overflow: visible; } 
 	#logo {width: 100%; z-index: 2;}
 	#test_div_scal {background-color: green;}	
-	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2)}	
+	.tab {top: 225px;}	
 	.tab button {font-size: 14px;}
 }
 @media (min-width:1900px) { /* 1080p displays */ 
@@ -139,7 +103,7 @@ img:hover {cursor: pointer;}
 	.logo_div {padding-left: calc((100vw - 384px)/2); width: 380px; padding-top: 5px; height: 210px; overflow: hidden; } 
 	#logo {width: 100%; z-index: 2;}
 	#test_div_scal{background-color: brown;}	
-	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2)}	
+	.tab {top: 225px;}	
 	.tab button {font-size: 14px;}
 }
 
