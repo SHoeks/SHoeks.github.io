@@ -71,7 +71,7 @@ function off() {
     document.getElementById("logo").style.opacity = 1.0;
     document.getElementById("img_show").style.opacity = 0.0;
     document.getElementById("img_show").src = "assets/none.jpg";
-    document.getElementById("tab_bar").style.display = "block";
+    document.getElementById("tab_bar").style.display = "flex";
 }
 
 // set next image in overlay
