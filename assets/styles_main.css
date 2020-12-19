@@ -88,7 +88,7 @@ img:hover {cursor: pointer;}
 	.tab {top: 170px;width: 265px;left: calc((100vw - 265px)/2)}
 	.tab button {font-size: 14px;}
 	@media (pointer:none), (pointer:coarse) { 
-		.tab {top: 170px;width: 29vw;left: 35.5vw;}	 
+		.tab {top: 170px;width: 30vw;left: 35vw;}	 
 		.tab button {font-size: 1.4vw;}
 		#test_div_scal {background-color: palevioletred;}
 		.tab button{padding-right: 1vw; padding-left: 1vw;}
