@@ -58,7 +58,7 @@ img:hover {cursor: pointer;}
 	.tab {top: 215px;width: 265px;left: calc((100vw - 267px)/2)}
 	.tab button {font-size: 14px;}
 	@media (pointer:none), (pointer:coarse) { 
-		.tab {top: 215px;width: 50vw;left: 25vw;}	 
+		.tab {top: 215px;width: 60vw;left: 25vw;}	 
 		.tab button {font-size: 2.71vw;}
 		#test_div_scal {background-color: teal;}
 		.tab button{padding-right: 1vw; padding-left: 1vw;}
@@ -73,7 +73,7 @@ img:hover {cursor: pointer;}
 	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2)}	
 	.tab button {font-size: 14px;}
 	@media (pointer:none), (pointer:coarse) { 
-		.tab {top: 225px;width: 40vw;left: 30vw;}	 
+		.tab {top: 225px;width: 60vw;left: 30vw;}	 
 		.tab button {font-size: 2.1vw;}
 		#test_div_scal {background-color: royalblue;}
 		.tab button{padding-right: 1vw; padding-left: 1vw;}
@@ -88,7 +88,7 @@ img:hover {cursor: pointer;}
 	.tab {top: 170px;width: 265px;left: calc((100vw - 265px)/2)}
 	.tab button {font-size: 14px;}
 	@media (pointer:none), (pointer:coarse) { 
-		.tab {top: 170px;width: 30vw;left: 35vw;}	 
+		.tab {top: 170px;width: 60vw;left: 35vw;}	 
 		.tab button {font-size: 1.4vw;}
 		#test_div_scal {background-color: palevioletred;}
 		.tab button{padding-right: 1vw; padding-left: 1vw;}
@@ -103,7 +103,7 @@ img:hover {cursor: pointer;}
 	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2)}
 	.tab button {font-size: 14px;}	
 	@media (pointer:none), (pointer:coarse) { 
-		.tab {top: 225px;width: 29vw;left: 35.5vw;}	 
+		.tab {top: 225px;width: 60vw;left: 35.5vw;}	 
 		.tab button {font-size: 1.4vw;}
 		#test_div_scal {background-color: yellowgreen;}
 		.tab button{padding-right: 1vw; padding-left: 1vw;}
@@ -118,7 +118,7 @@ img:hover {cursor: pointer;}
 	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2);}	
 	.tab button {font-size: 14px;}
 	@media (pointer:none), (pointer:coarse) { 
-		.tab {top: 225px;width: 27vw;left: 36.5vw;}	 
+		.tab {top: 225px;width: 60vw;left: 36.5vw;}	 
 		.tab button {font-size: 1.2vw;}
 		#test_div_scal {background-color:whitesmoke;}
 		.tab button{padding-right: 1vw; padding-left: 1vw;}
