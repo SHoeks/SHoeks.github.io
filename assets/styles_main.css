@@ -22,12 +22,16 @@ img:hover {cursor: pointer;}
 #loadmore_btn {width: 3vw; max-width: 50px; min-width: 27px; opacity: 0.4; transform: rotate(90deg); z-index: 100;}
 #loadmore_btn:hover {cursor: pointer; opacity: 0.8;}
 
+/* test indicator */
+#test_div_scal{overflow: hidden;background-color: black;width: 10px; height: 10px; top: 10px;left: 10px;position: absolute;z-index: 100;display: none;}
+
 /* image grid --------------------------------- */
 
 /* wide window (>767px) - 3 images per row */
 .img_grid{width: 20vw; height: 20vw; margin-left: 5vw; margin-right: 5vw; margin-bottom: 5vw;}
 .img_grid:hover {transform: scale(1.05)}
-#test_div_scal{overflow: hidden;background-color: black;width: 10px; height: 10px; top: 10px;left: 10px;position: absolute;z-index: 100;}
+
+
 
 @media (min-width:200px)  { /* < smaller */ 
 	.container {top: 165px;padding-left: 2vw; padding-right: 2vw; width: 96vw;}
