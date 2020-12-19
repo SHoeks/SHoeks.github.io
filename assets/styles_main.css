@@ -23,7 +23,7 @@ img:hover {cursor: pointer;}
 #loadmore_btn:hover {cursor: pointer; opacity: 0.8;}
 
 /* test indicator */
-#test_div_scal{overflow: hidden;background-color: black;width: 10px; height: 10px; top: 10px;left: 10px;position: absolute;z-index: 100;display: none;}
+#test_div_scal{overflow: hidden;background-color: black;width: 10px; height: 10px; top: 10px;left: 10px;position: absolute;z-index: 100;display: inline;}
 
 /* image grid --------------------------------- */
 
@@ -41,6 +41,10 @@ img:hover {cursor: pointer;}
 	#test_div_scal {background-color: blue;}
 	.tab {top: 135px;width: 233px;left: calc((100vw - 237px)/2)}	 
 	.tab button {font-size: 12px;}
+	@media (pointer:none), (pointer:coarse) { 
+		.tab {top: 135px;width: 253px;left: calc((100vw - 255px)/2)}	 
+		.tab button {font-size: 11px;}
+	}
 }
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
@@ -51,6 +55,11 @@ img:hover {cursor: pointer;}
 	#test_div_scal {background-color: orange;}
 	.tab {top: 215px;width: 265px;left: calc((100vw - 267px)/2)}
 	.tab button {font-size: 14px;}
+	@media (pointer:none), (pointer:coarse) { 
+		.tab {top: 215px;width: 300px;left: calc((100vw - 250px)/2)}	 
+		.tab button {font-size: 12px;}
+		#test_div_scal {background-color: teal;}
+	}
 }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 	 
 	.container {top:252px;padding-left: 2vw; padding-right: 2vw; width: 96vw;}
@@ -60,6 +69,9 @@ img:hover {cursor: pointer;}
 	#test_div_scal {background-color: purple;}
 	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2)}	
 	.tab button {font-size: 14px;}
+	@media (pointer:none), (pointer:coarse) { 
+		.tab button {font-size: 12px;}
+	}
 }
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
 	.container {top: 195px;padding-left: 1vw; padding-right: 1vw; width: 98vw;}
@@ -69,6 +81,9 @@ img:hover {cursor: pointer;}
 	#test_div_scal {background-color: pink;}	
 	.tab {top: 170px;width: 265px;left: calc((100vw - 265px)/2)}
 	.tab button {font-size: 14px;}
+	@media (pointer:none), (pointer:coarse) { 
+		.tab button {font-size: 12px;}
+	}
 }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 	.container {top:254px;padding-left: 1vw; padding-right: 1vw; width: 98vw;}
@@ -78,6 +93,9 @@ img:hover {cursor: pointer;}
 	#test_div_scal {background-color: yellow;} 
 	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2)}
 	.tab button {font-size: 14px;}	
+	@media (pointer:none), (pointer:coarse) { 
+		.tab button {font-size: 12px;}
+	}
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
 	.container {top:254px;padding-left: 1vw; padding-right: 1vw; width: 98vw;}
@@ -87,6 +105,9 @@ img:hover {cursor: pointer;}
 	#test_div_scal {background-color: red;} 
 	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2);}	
 	.tab button {font-size: 14px;}
+	@media (pointer:none), (pointer:coarse) { 
+		.tab button {font-size: 12px;}
+	}
 }
 @media (min-width:1281px) { /* laptops and desktops */ 
 	.container {top:260px;padding-left: calc((100vw - 1250px)/2); padding-right: calc((100vw - 1250px)/2); width: 1250px;}
@@ -96,6 +117,9 @@ img:hover {cursor: pointer;}
 	#test_div_scal {background-color: green;}	
 	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2)}	
 	.tab button {font-size: 14px;}
+	@media (pointer:none), (pointer:coarse) { 
+		.tab button {font-size: 12px;}
+	}
 }
 @media (min-width:1900px) { /* 1080p displays */ 
 	.container {top:260px;padding-left: calc((100vw - 1400px)/2); padding-right: calc((100vw - 1400px)/2); width: 1400px;}
@@ -105,6 +129,9 @@ img:hover {cursor: pointer;}
 	#test_div_scal{background-color: brown;}	
 	.tab {top: 225px;width: 265px;left: calc((100vw - 265px)/2)}	
 	.tab button {font-size: 14px;}
+	@media (pointer:none), (pointer:coarse) { 
+		.tab button {font-size: 12px;}
+	}
 }
 
 /* image grid --------------------------------- */
