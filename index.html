@@ -9,26 +9,10 @@
   <link rel="stylesheet" type="text/css" href="assets/styles_main.css">
   <link rel="stylesheet" type="text/css" href="assets/styles_overlay.css">
   <link rel="stylesheet" type="text/css" href="assets/styles_fonts.css">
-  <script>
-  // data holding image names and description, first entry is ment as example
-  var data = [ 
-	["000.jpg", "Image description"],
-	["001.jpg", "Passage into the unknown"],
-	["002.jpg", "Beyond the glimmer of another world"],
-	["003.jpg", "Here we may reign secure"],
-	["004.jpg", "There is none else walking"],
-	["007.jpg", "Smooth it glides upon its travel"],
-	["006.jpg", "The pathway to the hidden falls"],
-	["008.jpg", "..."],
-	["005.jpg", "I heard the dingoes cry"],
-  ];
-  </script>
-
-
+  <script src="images/data.js"></script>
 </head>
 
 <body>
-
 
 <div id="logo_div" class="logo_div"><img id="logo" src="assets/logo-white.svg"></div>
 
@@ -40,16 +24,14 @@
 	<p id="img_description">...</p>
 </div>
 
-<div id="img_container" class="container">
-	<img class="img_grid" id="img1" onclick="on(1);">
-	<img class="img_grid" id="img2" onclick="on(2);">
-	<img class="img_grid" id="img3" onclick="on(3);">
-	<img class="img_grid" id="img4" onclick="on(4);">
-	<img class="img_grid" id="img5" onclick="on(5);">
-	<img class="img_grid" id="img6" onclick="on(6);">
-	<img class="img_grid" id="img7" onclick="on(7);">
-	<img class="img_grid" id="img8" onclick="on(8);">
+<div class="tab" id="tab_bar">
+	<button class="tablinks" onclick="SetTab(event)" id="BW_defaultOpen">Black & White</button>
+	<button class="tablinks" onclick="SetTab(event)" id="Colour">Colour</button>
+	<button class="tablinks" onclick="SetTab(event)" id="Widlife">Wildlife</button>
 </div>
+
+<div id="img_container" class="container"></div>
+<div id="test_div_scal"></div>
 
 <script src="assets/main.js"></script>
 
