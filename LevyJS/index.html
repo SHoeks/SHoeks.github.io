@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html style="background-color: black">
+<html style="background-color: #596363">
 
 <head>
 		<title>Levy Model</title>
@@ -16,21 +16,19 @@
 </style>
 </head>
 
-<body style="background-color: black">
+<body style="background-color: #596363">
 
 <!--<h2>Levy Brownian walk - LBsimulation</h2> -->
 
 <div class="row"></div>
 <div class="column">
 <div>
-	Wind speed  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Viscosity
-	<br>
-	<input id="speedSlider" type="range" min="0" max="0.12" step="0.005" value="0.1" onchange="adjustSpeed()">
+	<input id="speedSlider" type="range" min="0" max="0.12" step="0.005" value="0.1" onchange="adjustSpeed()" style="display: none;">
 	<!-- <br> -->
 	<!--&nbsp;&nbsp;  -->
 	
 	<!--<br>-->
-	<input id="viscSlider" type="range" min="0.005" max="0.2" step="0.005" value="0.055" onchange="adjustViscosity()">
+	<input id="viscSlider" type="range" min="0.005" max="0.2" step="0.005" value="0.055" onchange="adjustViscosity()" style="display: none;">
 </div>
 <div style="display:none">
 	<select id="mouseSelect">
@@ -77,7 +75,22 @@
 		<input id="debugButton" type="button" value="Debug" onclick="debug()" style="display:none">
 	</div>
 </div>
-<div>
+
+<div style="margin-bottom: 15px;">
+	<p style="color: white;margin-bottom: 3px; ">1) Distribute shoots</p>
+		<input id="LevyBotton" type="button" onclick="placePresetBarrier(2)" value="Levy (mu = 2)">
+		<!-- <br> -->
+		<input id="ExpBotton" type="button" onclick="placePresetBarrier(3)" value="Brownian (mu = 3)">
+		<input id="clearButton" type="button" onclick="clearBarriers()" value="Clear plants">
+		<br>
+		<select id="barrierSelect" onchange="placePresetBarrier()" style="display:none"></select>
+			<option style="display:none">select distribution</option>
+		</select>
+</div>
+
+
+<div style="margin-bottom: 15px;">
+	<p style="color: white;margin-bottom: 3px; ">2) Start wind simulation</p>
 	<!-- <select id="sizeSelect" onchange="resize()">
 		<option value="10">60 x 24</option>
 		<option value="8">75 x 30</option>
@@ -96,17 +109,8 @@
 
 	
 </div>
-<div style="margin-bottom: 15px ;">
-		<br>
-		<input id="LevyBotton" type="button" onclick="placePresetBarrier(2)" value="Levy (mu = 2)">
-		<!-- <br> -->
-		<input id="ExpBotton" type="button" onclick="placePresetBarrier(3)" value="Brownian (mu = 3)">
-		<input id="clearButton" type="button" onclick="clearBarriers()" value="Clear plants">
-		<br>
-		<select id="barrierSelect" onchange="placePresetBarrier()" style="display:none"></select>
-			<option style="display:none">select distribution</option>
-		</select>
-	</div>
+
+
 <!--set canvas size-->
 <canvas id="theCanvas" width="900" height="900"></canvas>
 </div>
