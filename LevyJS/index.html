@@ -22,6 +22,11 @@
 
 <div class="row"></div>
 <div class="column">
+
+
+
+
+
 <div>
 	<input id="speedSlider" type="range" min="0" max="0.12" step="0.005" value="0.1" onchange="adjustSpeed()" style="display: none;">
 	<!-- <br> -->
@@ -76,11 +81,14 @@
 	</div>
 </div>
 
-<div style="margin-bottom: 15px;">
-	<p style="color: white;margin-bottom: 3px; ">1) Distribute shoots, each click generates a random shoot configuration</p>
+
+<div style="margin-bottom: 15px; position: absolute; left: 950px; top: 40px; text-align: left;">
+	<p style="color: white;margin-bottom: 3px; margin-top: 1px; width: 450px; text-align: left;font-size: 16px;">1) Distribute shoots</p>
+	<p style="color: white;margin-bottom: 7px; margin-top: 1px; width: 450px; text-align: left;">Each click generates a random shoot configuration</p>
 		<input id="LevyBotton" type="button" onclick="placePresetBarrier(2)" value="Levy (mu = 2)">
-		<!-- <br> -->
+		<br> 
 		<input id="ExpBotton" type="button" onclick="placePresetBarrier(3)" value="Brownian (mu = 3)">
+		<br> 
 		<input id="clearButton" type="button" onclick="clearBarriers()" value="Clear plants">
 		<br>
 		<select id="barrierSelect" onchange="placePresetBarrier()" style="display:none"></select>
@@ -88,9 +96,9 @@
 		</select>
 </div>
 
-
-<div style="margin-bottom: 15px;">
-	<p style="color: white;margin-bottom: 3px; ">2) Start wind simulation</p>
+<div style="margin-bottom: 15px; position: absolute; left: 945px; top: 200px; text-align: left;">
+	<p style="color: white;margin-bottom: 3px; margin-top: 1px; width: 450px; text-align: left;font-size: 16px;">2) Start wind simulation</p>
+	<p style="color: white;margin-bottom: 7px; margin-top: 1px;width: 450px; text-align: left;">Start and reset the flow simulation</p>
 	<!-- <select id="sizeSelect" onchange="resize()">
 		<option value="10">60 x 24</option>
 		<option value="8">75 x 30</option>
@@ -102,7 +110,7 @@
 		<option value="1">300 x 200</option>
 	</select> -->
 	<input id="startButton" type="button" onclick="startStop()" value="Start flow">
-	
+	<br> 
 	<!-- <input id="stepButton" type="button" onclick="simulate()" value="Step"> -->
 	<!-- <br> -->
 	<input id="resetFluidButton" type="button" onclick="initFluid()" value="Reset flow">
@@ -112,7 +120,7 @@
 
 
 <!--set canvas size-->
-<canvas id="theCanvas" width="900" height="900"></canvas>
+<canvas id="theCanvas" width="900" height="900" style="position: absolute;top: 20px;left: 20px;"></canvas>
 </div>
 
 <script src="barrierdata.js"></script>
