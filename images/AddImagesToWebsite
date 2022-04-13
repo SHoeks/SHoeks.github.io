@@ -1,0 +1,85 @@
+#!/bin/bash
+
+# set dir here
+parent_path="/Volumes/PhotoSSD/WEBSITE_Selwyn/website/images/"
+cd $parent_path
+
+echo "converting the following images for web:"
+echo " "
+for f in *\ *; do mv "$f" "${f// /_}"; done
+
+
+n=$(ls *.jpg | wc -l); c=1
+for i in $(ls *.jpg); do
+
+    # echo process
+    echo $c "/" $n ":" $i
+
+    # get img dims
+    w=$(identify -format "%w" $i)
+    h=$(identify -format "%h" $i)
+
+    cp $i small/
+    cp $i medium/
+    cp $i large/
+
+    if [[ $w > $h ]];then
+        mogrify -resize 400 small/"$i"
+        mogrify -resize 1000 medium/"$i"
+        mogrify -resize 1700 large/"$i"
+        convert small/"$i" small_webp/"${i%%.*}".webp
+        convert medium/"$i" medium_webp/"${i%%.*}".webp
+        convert large/"$i" large_webp/"${i%%.*}".webp
+    else
+        mogrify -resize 400 small/"$i"
+        mogrify -resize 600 medium/"$i"
+        mogrify -resize 1200 large/"$i"
+        convert small/"$i" small_webp/"${i%%.*}".webp
+        convert medium/"$i" medium_webp/"${i%%.*}".webp
+        convert large/"$i" large_webp/"${i%%.*}".webp
+    fi
+
+    let c=c+1 
+
+done
+
+# add image data to website
+cd $parent_path
+echo " "
+echo "creating image data for:"
+echo " "
+
+# Example:
+# {'file' : 'file.jpg', 'name' : 'Untitled', 'format' : 'portrait'},
+# {'file' : 'file.jpg', 'name' : 'Untitled', 'format' : 'landscape'},
+
+touch new_data.js
+
+for i in $(ls *.jpg); do
+
+    w=$(identify -format "%w" $i)
+    h=$(identify -format "%h" $i)
+
+    # echo filename
+    filename="${i%.*}"
+    echo "$filename"
+
+    if [[ $w > $h ]];then
+        echo "{'file' : '$filename', 'description' : 'Untitled', 'format' : 'L'}," >> new_data.js
+    else
+        echo "{'file' : '$filename', 'description' : 'Untitled', 'format' : 'P'}," >> new_data.js
+    fi
+
+done
+
+# insert data into image-data.js
+lineNum="$(grep -n "new data gets automatically inserted above" ../index.html | head -n 1 | cut -d: -f1)"
+let lineNum-=3
+sed -i.bak "${lineNum}r new_data.js" ../index.html
+
+# remove temp data file 
+cd $parent_path
+rm -rf new_data.js
+
+# copy originals to correct folder
+mv *.jpg ../../exports/
