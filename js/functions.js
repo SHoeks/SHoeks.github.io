@@ -32,7 +32,7 @@ function addImages(obj,data,n,webp) {
         descri = data[i].description.replace(/-/g, " ");
 
         //!!!!!! FOR CHECKING ONLY, COMMENT TO TURN OFF
-        descri = data[i].file
+        //descri = data[i].file
         //!!!!!! FOR CHECKING ONLY, COMMENT TO TURN OFF
 
         if(data[i].format=="P"){ // is portrait
