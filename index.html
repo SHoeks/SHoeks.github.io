@@ -386,10 +386,18 @@
 
 
 		if(canUseWebP()){ // browser supports webp, load cover and first 10 images
-			$("#landingHeader").css("background-image", "url('images/covers/cover1_overlay.webp')")
+			if($(window).innerWidth()>800) { // desktop banner
+				$("#landingHeader").css("background-image", "url('images/covers/cover1_overlay.webp')")
+			}else{ // mobile banner
+				$("#landingHeader").css("background-image", "url('images/covers/cover1_overlay_mob.webp')")
+			}
 			LoadIMGS_batch(data,0,10,".webp","images/small_webp/",0.5);
 		}else{
-			$("#landingHeader").css("background-image", "url('images/covers/cover1_overlay.jpg')")
+			if($(window).innerWidth()>800) { // desktop banner
+				$("#landingHeader").css("background-image", "url('images/covers/cover1_overlay.jpg')")
+			}else{ // mobile banner
+				$("#landingHeader").css("background-image", "url('images/covers/cover1_overlay_mob.jpg')")
+			}
 			LoadIMGS_batch(data,0,10,".jpg","images/small/",0.5);
 		}
 		

@@ -510,7 +510,6 @@ h2 {
 @media screen and (max-width: 480px) {
   .grid-sizer,
   .grid-item {
-    /* width: 50%; */
     width: 100%;
     padding: 10px 5px;
 
@@ -518,6 +517,16 @@ h2 {
   .container-fluid {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  #fh5co-image-grid .item a .img-wrap img {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #fh5co-image-grid .item a .img-wrap img {
+    transform: scale(1.0);
   }
 }
 
