@@ -45,7 +45,7 @@
 	<script src="js/functions.js"></script>
 
 	</head>
-	<body>
+	<body onload="LoadIMGS_now()">
 	<header id="landingHeader" class="to-animate fadeInNoScale animated-slowest">
 		<h1 id="logoDown" class="to-animate fadeInUp animated-slow"><img src="assets/logo-white.svg" class="mbr-navbar__brand-img mbr-brand__img" alt="Selwyn Hoeks" style="width: 80vw;max-height: 215px; animation: fadeInAnimation ease 2s;animation-iteration-count: 1;animation-fill-mode: forwards;"></h1>
 		<!-- <h2 class="to-animate fadeInUp animated-slower">Landscape & Travel Photography</h2>-->
@@ -332,6 +332,7 @@
 {'file' : 'rolletje2_img_0010_20220525_6528-positive-1', 'description' : 'Untitled', 'format' : 'L'},
 {'file' : 'rolletje2_img_0014_20220525_30015-positive-1', 'description' : 'Untitled', 'format' : 'P'},
 // {'file' : 'exports_2022_05_26_-42-1', 'description' : 'Untitled', 'format' : 'P'},
+{'file' : '2022_05_11__DSC06162-1', 'description' : 'Untitled', 'format' : 'L'},
 			
 			
 			// new data gets automatically inserted above
@@ -382,6 +383,17 @@
 			for( i = img_start; i < img_stop; i++){
 				filename = img_data[i].file.replace(/\.[^/.]+$/, "")
 				$(".img-responsive").eq(i).attr("src", img_folder + filename + img_ext)
+			}
+		}
+
+		function LoadIMGS_now() {
+			if($(window).scrollTop()>1000) {
+				console.log("loading images... index start: " + 0 + ', index stop: ' + data.length);
+				var filename = "";
+				for( i = 0; i < data.length; i++){
+					filename = data[i].file.replace(/\.[^/.]+$/, "")
+					$(".img-responsive").eq(i).attr("src", "images/small_webp/" + filename + ".webp")
+				}
 			}
 		}
 
@@ -474,6 +486,7 @@
 					
 				}
 		});
+
 
 	</script>
 
