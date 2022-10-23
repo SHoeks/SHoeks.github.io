@@ -60,6 +60,8 @@
 			}
 
 		} , { offset: '90%' } );
+
+		
 	};
 
 
@@ -68,7 +70,7 @@
 		var $grid = $('.grid').isotope({
 		  itemSelector: '.grid-item',
 		  percentPosition: true,
-		  resizable: false,
+		  resizable: true,
 		  masonry: {
 		    columnWidth: '.grid-sizer',
 		  }

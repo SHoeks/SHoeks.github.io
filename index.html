@@ -25,6 +25,7 @@
 	<link rel="shortcut icon" href="assets/favicon.svg">
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet"> -->
+	<link rel="preload" href="js/main.js" as="script">
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -449,8 +450,12 @@
 		});
 
 		$(window).resize(function(){
-			if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-				location.reload(); // reload on resize, desktop only
+			console.log("resizing page... removing animation classes")
+			grid_items = document.getElementsByClassName("grid-item")
+			for( i = 0; i < grid_items.length; i++){
+				grid_items[i].classList.remove("animate-box")
+				grid_items[i].classList.remove("fadeIn")
+				grid_items[i].classList.remove("animated-fast")
 			}
 			$("#landingHeader").css('height',$(window).innerHeight() + 'px'); // set size banner
 			$("#down").css("top",$(window).innerHeight()*0.85 + 'px'); // set arrow at right height
