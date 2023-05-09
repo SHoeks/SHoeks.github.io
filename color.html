@@ -110,12 +110,6 @@
         </div>
     </div>
 
-    <script>
-    function visitMain(){location.href='https://shoeks.github.io/main.html';}
-    function visitColor(){location.href='https://shoeks.github.io/color.html';}
-    function visitFilm(){location.href='https://shoeks.github.io/film.html';}
-    </script>
-
     <div id="loader" style="background-repeat: no-repeat;background-attachment: fixed; background-size: cover;">
         <div class="container">
             <div style="width: 100%;padding-top: 0px;padding-left: 0px;">
@@ -163,9 +157,9 @@
         <div id="footer" class="row">
             <div class="col-xs-12">
                 <ul class="menu__category has-no-select">
-                    <li class="--transformY" data-scroll><p class="l4"><a href="main.html" class="has-scale" data-splitting>Main</a></p><span class="menu__category__num"><span>1<br>1</span></span></li>
-                    <li class="--transformY" data-scroll><p class="l4"><a href="color.html" class="has-scale" data-splitting>Color</a></p><span class="menu__category__num"><span>2<br>2</span></span></li>
-                    <li class="--transformY" data-scroll><p class="l4"><a href="film.html" class="has-scale" data-splitting>Film</a></p><span class="menu__category__num"><span>3<br>3</span></span></li>
+                    <div onclick="visitMain()"><li class="--transformY" data-scroll><p class="l4"><a href="main.html" class="has-scale" data-splitting>Main</a></p><span class="menu__category__num"><span>1<br>1</span></span></li></div>
+                    <div onclick="visitColor()"><li class="--transformY" data-scroll><p class="l4"><a href="color.html" class="has-scale" data-splitting>Color</a></p><span class="menu__category__num"><span>2<br>2</span></span></li></div>
+                    <div onclick="visitFilm()"><li class="--transformY" data-scroll><p class="l4"><a href="film.html" class="has-scale" data-splitting>Film</a></p><span class="menu__category__num"><span>3<br>3</span></span></li></div>
                 </ul>
             </div>
             <!-- <div class="col-xs-12 col-sm-6 col-xs-remove"><p>©2022, <a class="has-scale --upper" href="/legal">Legal</a></p></div>
@@ -192,18 +186,24 @@
 
 <!-- add images -->
 <script>
+// function for redirecting to sub-pages
+function visitMain(){
+    console.log('main');
+    location.href='https://shoeks.github.io/main.html';
+}
+function visitColor(){
+    console.log('color');
+    location.href='https://shoeks.github.io/color.html';
+}
+function visitFilm(){
+    console.log('film');
+    location.href='https://shoeks.github.io/film.html';
+}
 
 // show which banner has loaded
-//console.log(window.innerWidth, window.innerHeight, file_path)
+console.log(window.innerWidth, window.innerHeight, file_path)
 
 // add parallax scroll speed to image data
-// function addScrollSpeed(data,n){
-//     // sample data scroll speeds
-//     var sample_array = [1.25,1,0.75,0.5,0.0,0.25,0.9];
-//     for( i = 0; i < n; i++) {
-//         data[i].scroll_speed = sample_array[Math.floor(Math.random() * sample_array.length)];
-//     }
-// }
 function addScrollSpeed(data,n){
     var sample_array = [1.5,1.25,1,0.75,0.5,0,0.25,0.9];
     var sample_array_length = sample_array.length;
