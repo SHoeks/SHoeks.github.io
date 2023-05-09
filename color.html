@@ -79,9 +79,24 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-9">
                     <ul class="menu__category has-no-select">
-                        <li style="margin-bottom: 5px;"><p class="l4"><a class="has-scale" href="main.html" data-splitting>Main</a></p><span class="menu__category__num"><span>1<br>1</span></span></li>
-                        <li style="margin-bottom: 5px;"><p class="l4"><a class="has-scale" href="color.html" data-splitting>Color</a></p><span class="menu__category__num"><span>2<br>2</span></span></li>
-                        <li style="margin-bottom: 5px;"><p class="l4"><a class="has-scale" href="film.html" data-splitting>Film</a></p><span class="menu__category__num"><span>3<br>3</span></span></li>
+                        <div onclick="visitMain()">
+                            <li style="margin-bottom: 5px;">
+                                <p class="l4"><a class="has-scale" data-splitting>Main</a></p>
+                                <span class="menu__category__num"><span>1<br>1</span></span>
+                            </li>
+                        </div>
+                        <div onclick="visitColor()">
+                            <li style="margin-bottom: 5px;">
+                                <p class="l4"><a class="has-scale" data-splitting>Color</a></p>
+                                <span class="menu__category__num"><span>2<br>2</span></span>
+                            </li>
+                        </div>
+                        <div onclick="visitFilm()">
+                            <li style="margin-bottom: 5px;">
+                                <p class="l4"><a class="has-scale" data-splitting>Film</a></p>
+                                <span class="menu__category__num"><span>3<br>3</span></span>
+                            </li>
+                        </div>
                     </ul>
                 </div>
                 <div class="col-xs-5 col-xs-offset-7 col-sm-3 col-sm-offset-0" style="opacity: 0;">
@@ -94,6 +109,12 @@
             </div>
         </div>
     </div>
+
+    <script>
+    function visitMain(){location.href='https://shoeks.github.io/main.html';}
+    function visitColor(){location.href='https://shoeks.github.io/color.html';}
+    function visitFilm(){location.href='https://shoeks.github.io/film.html';}
+    </script>
 
     <div id="loader" style="background-repeat: no-repeat;background-attachment: fixed; background-size: cover;">
         <div class="container">
