@@ -1,0 +1,95 @@
+@media only screen and (min-width:768px) {
+
+    /* 25% screen width */
+    #w25_s1 {flex-basis: 22%; max-width: 22%; margin-top: 6px; margin-bottom: 0px; margin-left: 4%; margin-right: 3%; align-items: flex-start;}
+    #w25_s2 {flex-basis: 26%; max-width: 26%; margin-top: 0px; margin-bottom: 10px; margin-left: 3%; margin-right: 2%; align-items: flex-end;}
+    #w25_s3 {flex-basis: 26%; max-width: 26%; margin-top: 0px; margin-bottom: 17px; margin-left: 2%; margin-right: 2%; align-items: center;}
+    #w25_s4 {flex-basis: 26%; max-width: 26%; margin-top: 2px; margin-bottom: 0px; margin-left: 2%; margin-right: 2%; align-items: flex-start;}
+    #w25_s5 {flex-basis: 26%; max-width: 26%; margin-top: 3px; margin-bottom: 0px; margin-left: 3%; margin-right: 1%; align-items: flex-start;}
+    #w25_m1 {flex-basis: 29%; max-width: 29%; margin-top: 0px; margin-bottom: 3px; margin-left: 1%; margin-right: 1%; align-items: flex-end;}
+    #w25_m2 {flex-basis: 27%; max-width: 27%; margin-top: 4px; margin-bottom: 0px; margin-left: 2%; margin-right: 2%; align-items: flex-start;}
+    #w25_m3 {flex-basis: 27%; max-width: 27%; margin-top: 0px; margin-bottom: 2px; margin-left: 2%; margin-right: 2%; align-items: center;}
+    #w25_m4 {flex-basis: 27%; max-width: 27%; margin-top: 0px; margin-bottom: 3px; margin-left: 2%; margin-right: 2%; align-items: flex-end;}
+    #w25_m5 {flex-basis: 27%; max-width: 27%; margin-top: 8px; margin-bottom: 0px; margin-left: 2%; margin-right: 2%; align-items: flex-start;}
+    #w25_l1 {flex-basis: 31%; max-width: 31%; margin-top: 0px; margin-bottom: 2px; margin-left: 2%; margin-right: 2%; align-items: center;}
+    #w25_l2 {flex-basis: 31%; max-width: 31%; margin-top: 0px; margin-bottom: 1px; margin-left: 2%; margin-right: 2%; align-items: center;}
+    #w25_l3 {flex-basis: 31%; max-width: 31%; margin-top: 0px; margin-bottom: 1px; margin-left: 2%; margin-right: 2%; align-items: flex-end;}
+    #w25_l4 {flex-basis: 31%; max-width: 31%; margin-top: 2px; margin-bottom: 0px; margin-left: 2%; margin-right: 2%; align-items: flex-start;}
+    #w25_l5 {flex-basis: 31%; max-width: 31%; margin-top: 0px; margin-bottom: 0px; margin-left: 2%; margin-right: 2%; align-items: center;}
+
+    /* 50% screen width */
+    #w50_s1 {flex-basis: 33%; max-width: 33%;  margin-top: 16px; margin-bottom: 0px; margin-left: auto; margin-right: auto; align-items: flex-start;}
+    #w50_s2 {flex-basis: 34%; max-width: 34%;  margin-top: 0px; margin-bottom: 11px;margin-left: 6%; margin-right: 5%; align-items: flex-end;}
+    #w50_s3 {flex-basis: 31%; max-width: 31%;  margin-top: 0px; margin-bottom: 17px;margin-left: 7%; margin-right: 7%; align-items: center;}
+    #w50_s4 {flex-basis: 32%; max-width: 32%;  margin-top: 2px; margin-bottom: 0px; margin-left: 6%; margin-right: 5%; align-items: flex-start;}
+    #w50_s5 {flex-basis: 33%; max-width: 33%;  margin-top: 3px; margin-bottom: 0px; margin-left: 11%; margin-right: 4%; align-items: flex-start;}
+    #w50_m1 {flex-basis: 41%; max-width: 41%;  margin-top: 0px; margin-bottom: 13px; margin-left: auto; margin-right: auto; align-items: flex-end;}
+    #w50_m2 {flex-basis: 42%; max-width: 42%;  margin-top: 10px; margin-bottom: 0px; margin-left: 2%; margin-right: 2%; align-items: flex-start;}
+    #w50_m3 {flex-basis: 42%; max-width: 42%;  margin-top: 0px; margin-bottom: 2px; margin-left: 2%; margin-right: 2%; align-items: center;}
+    #w50_m4 {flex-basis: 42%; max-width: 42%;  margin-top: 0px; margin-bottom: 3px; margin-left: 2%; margin-right: 2%; align-items: flex-end;}
+    #w50_m5 {flex-basis: 42%; max-width: 42%;  margin-top: 8px; margin-bottom: 0px; margin-left: auto; margin-right: auto; align-items: flex-start;}
+    #w50_l1 {flex-basis: 45%; max-width: 45%;  margin-top: 0px; margin-bottom: 5px; margin-left: 2%; margin-right: 2%; align-items: center;}
+    #w50_l2 {flex-basis: 45%; max-width: 45%;  margin-top: 0px; margin-bottom: 4px; margin-left: 2%; margin-right: 2%; align-items: center;}
+    #w50_l3 {flex-basis: 45%; max-width: 45%;  margin-top: 0px; margin-bottom: 12px; margin-left: auto; margin-right: auto; align-items: flex-end;}
+    #w50_l4 {flex-basis: 45%; max-width: 45%;  margin-top: 11px; margin-bottom: 0px; margin-left: 2%; margin-right: 2%; align-items: flex-start;}
+    #w50_l5 {flex-basis: 45%; max-width: 45%;  margin-top: 0px; margin-bottom: 0px; margin-left: 2%; margin-right: 2%; align-items: center;}
+
+    /* 50% screen width for portrait images */
+    #w50p_s1 {flex-basis: 27%; max-width: 27%;  margin-top: 0px; margin-bottom: 13px; margin-left: 14%; margin-right: 2%; align-items: flex-end;}
+    #w50p_s2 {flex-basis: 27%; max-width: 27%;  margin-top: 10px; margin-bottom: 0px; margin-left: 14%; margin-right: 1%; align-items: flex-start;}
+    #w50p_s3 {flex-basis: 27%; max-width: 27%;  margin-top: 0px; margin-bottom: 2px; margin-left: 11%; margin-right: 5%; align-items: center;}
+    #w50p_s4 {flex-basis: 27%; max-width: 27%;  margin-top: 0px; margin-bottom: 3px; margin-left: 16%; margin-right: 5%; align-items: flex-end;}
+    #w50p_s5 {flex-basis: 27%; max-width: 27%;  margin-top: 8px; margin-bottom: 0px; margin-left: 11%; margin-right: 0%; align-items: flex-start;}
+    #w50p_m1 {flex-basis: 31%; max-width: 31%;  margin-top: 0px; margin-bottom: 13px; margin-left: 10%; margin-right: 2%; align-items: flex-end;}
+    #w50p_m2 {flex-basis: 31%; max-width: 31%;  margin-top: 10px; margin-bottom: 0px; margin-left: 11%; margin-right: 1%; align-items: flex-start;}
+    #w50p_m3 {flex-basis: 31%; max-width: 31%;  margin-top: 0px; margin-bottom: 2px; margin-left: 8%; margin-right: 5%; align-items: center;}
+    #w50p_m4 {flex-basis: 31%; max-width: 31%;  margin-top: 0px; margin-bottom: 3px; margin-left: 6%; margin-right: 5%; align-items: flex-end;}
+    #w50p_m5 {flex-basis: 31%; max-width: 31%;  margin-top: 8px; margin-bottom: 0px; margin-left: 12%; margin-right: 0%; align-items: flex-start;}
+    #w50p_l1 {flex-basis: 37%; max-width: 37%;  margin-top: 0px; margin-bottom: 13px; margin-left: 10%; margin-right: 2%; align-items: flex-end;}
+    #w50p_l2 {flex-basis: 37%; max-width: 37%;  margin-top: 10px; margin-bottom: 0px; margin-left: 11%; margin-right: 1%; align-items: flex-start;}
+    #w50p_l3 {flex-basis: 37%; max-width: 37%;  margin-top: 0px; margin-bottom: 2px; margin-left: 8%; margin-right: 5%; align-items: center;}
+    #w50p_l4 {flex-basis: 37%; max-width: 37%;  margin-top: 0px; margin-bottom: 3px; margin-left: 6%; margin-right: 5%; align-items: flex-end;}
+    #w50p_l5 {flex-basis: 37%; max-width: 37%;  margin-top: 8px; margin-bottom: 0px; margin-left: 12%; margin-right: 0%; align-items: flex-start;}
+    #w50p_xl1 {flex-basis: 41%; max-width: 41%;  margin-top: 0px; margin-bottom: 13px; margin-left: 8%; margin-right: 2%; align-items: flex-end;}
+    #w50p_xl2 {flex-basis: 41%; max-width: 41%;  margin-top: 10px; margin-bottom: 0px; margin-left: 8%; margin-right: 1%; align-items: flex-start;}
+    #w50p_xl3 {flex-basis: 41%; max-width: 41%;  margin-top: 0px; margin-bottom: 2px; margin-left: 8%; margin-right: 3%; align-items: center;}
+    #w50p_xl4 {flex-basis: 41%; max-width: 41%;  margin-top: 0px; margin-bottom: 3px; margin-left: 6%; margin-right: 2%; align-items: flex-end;}
+    #w50p_xl5 {flex-basis: 41%; max-width: 41%;  margin-top: 8px; margin-bottom: 0px; margin-left: 8%; margin-right: 0%; align-items: flex-start;}
+
+    /* 75% screen width */
+    #w75_s1 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: flex-start;}
+    #w75_s2 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: flex-end;}
+    #w75_s3 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: center;}
+    #w75_s4 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: flex-start;}
+    #w75_s5 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: flex-start;}
+    #w75_m1 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: flex-end;}
+    #w75_m2 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: flex-start;}
+    #w75_m3 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: center;}
+    #w75_m4 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: flex-end;}
+    #w75_m5 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: flex-start;}
+    #w75_l1 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: center;}
+    #w75_l2 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: center;}
+    #w75_l3 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: flex-end;}
+    #w75_l4 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: flex-start;}
+    #w75_l5 {flex-basis: 60%; max-width: 60%; margin-left: 1%; margin-right: 1%; align-items: center;}
+
+    /* 100% screen width */
+    #w100_s1 {flex-basis: 85%; max-width: 85%; margin-left: auto; margin-right: auto; align-items: flex-start;}
+    #w100_s2 {flex-basis: 85%; max-width: 85%; margin-left: 5%;   margin-right: auto; align-items: flex-end;}
+    #w100_s3 {flex-basis: 85%; max-width: 85%; margin-left: auto; margin-right: auto; align-items: center;}
+    #w100_s4 {flex-basis: 85%; max-width: 85%; margin-left: auto; margin-right: auto; align-items: flex-start;}
+    #w100_s5 {flex-basis: 85%; max-width: 85%; margin-left: auto; margin-right: auto; align-items: flex-start;}
+    #w100_m1 {flex-basis: 85%; max-width: 85%; margin-left: 5%;   margin-right: auto; align-items: flex-end;}
+    #w100_m2 {flex-basis: 85%; max-width: 85%; margin-left: auto; margin-right: auto; align-items: flex-start;}
+    #w100_m3 {flex-basis: 85%; max-width: 85%; margin-left: auto; margin-right: 5%;   align-items: center;}
+    #w100_m4 {flex-basis: 85%; max-width: 85%; margin-left: auto; margin-right: auto; align-items: flex-end;}
+    #w100_m5 {flex-basis: 85%; max-width: 85%; margin-left: 5%;   margin-right: auto; align-items: flex-start;}
+    #w100_l1 {flex-basis: 85%; max-width: 85%; margin-left: auto; margin-right: 5%;   align-items: center;}
+    #w100_l2 {flex-basis: 85%; max-width: 85%; margin-left: auto; margin-right: auto; align-items: center;}
+    #w100_l3 {flex-basis: 85%; max-width: 85%; margin-left: auto; margin-right: auto; align-items: flex-end;}
+    #w100_l4 {flex-basis: 85%; max-width: 85%; margin-left: 5%;   margin-right: auto; align-items: flex-start;}
+    #w100_l5 {flex-basis: 85%; max-width: 85%; margin-left: auto; margin-right: 5%;   align-items: center;}
+    
+}
+    
+@media only screen and (max-width:768px) {.project{display: block !important;}}

@@ -1,0 +1,12 @@
+{
+'file_large' : 'DSC03305_1_2048x1365.webp',
+'large_width' : '2048', 'large_height' : '1365',
+'file_medium' : 'DSC03305_1_1536x1024.webp',
+'medium_width' : '1536', 'medium_height' : '1024',
+'file_small' : 'DSC03305_1_960x640.webp',
+'small_width' : '960', 'small_height' : '640',
+'file_tiny' : 'DSC03305_1_768x512.webp',
+'tiny_width' : '768', 'tiny_height' : '512',
+'description' : 'Test gallery 2',
+'format' : 'landscape',
+},

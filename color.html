@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en-GB" class="is-loading">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selwyn Hoeks</title>
+    <meta name="description" content="Ruben Wyttenbach Photography, swiss based photographer and artist">
+    <meta name="author" content="Ruben Wyttenbach">
+    <meta property="og:title" content="Ruben Wyttenbach, Index">
+    <meta property="og:type" content="Website">
+    <meta property="og:url" content="https://shoeks.github.io/">
+    <meta property="og:description" content="Ruben Wyttenbach Photography, Index">
+    <meta property="og:image" content="wp-content/themes/rwy/assets/img/og-image.png">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <link rel="canonical" href="" />
+    <!-- <link rel="preload" as="image" href="assets/banner/banner03.jpg"> -->
+    <!-- <link rel="preload" as="image" href="assets/logo/logo-sh.svg"> -->
+    <link rel="stylesheet" href="assets/code/5e359_color.css" media="all" />
+    <script type='text/javascript' src='assets/code/jquery-3.6.0.min.js' id='jq-js'></script>
+    <script type='text/javascript' src='assets/code/babel-polyfill.min.js' id='pf-js'></script>
+    <script type='text/javascript' src='assets/code/polyfill.min.js' id='pf2-js'></script>
+    <script src="assets/code/5977e.js"></script>
+    <link rel="preload" href="assets/fonts/Kern-Regular.ttf" as="font" type="font/ttf" >
+    <link rel="preload" href="assets/fonts/Kern-Regular.woff" as="font" type="font/woff" >
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon-180x180.png">
+    <link rel="shortcut icon" type="image/svg" href="assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
+	<link rel="stylesheet" href="assets/popup/magnific-popup.css">
+    <meta name="msapplication-square310x310logo" content="assets/icons/mstile-310x310.png">
+    <meta name="msapplication-TileColor" content="#000000">
+
+    <!-- preload banner  -->
+    <script type="text/javascript">
+        var ww = window.innerWidth; 
+        var wh = window.innerHeight; 
+        var ratio = ww/wh;
+        var file = ""
+        if(ratio>1.0) file = "banner_"
+        if(ratio>0.7 & ratio < 1.0) file = "banner_tablet_"
+        if(ratio<0.7) file = "banner_mobile_"
+        var select_w = (Math.ceil(ww/100)*100)+100;
+        if(select_w>2200) select_w=2200;
+        file_path = "assets/banner/color/" + file + select_w + ".webp";
+        img1 = new Image();
+        img1.src = file_path;
+        $("body").css("background-color", "black");
+        $("#loader").hide();
+        $(img1).on('load', function(){
+            $("#loader").css("background-image","url("+$(this).attr("src")+")").fadeIn(2000); 
+            $("body").css("background-image","url("+$(this).attr("src")+")").fadeIn(2000); 
+        }); 
+    </script>
+
+
+</head>
+
+<body style="background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: cover; cursor:none;"><div class="app">
+
+    <div class="cursor">
+        <div id="cursor-inner">
+            <span class="progress progress--fat">
+                <svg height="64" width="64"><circle cx="32" cy="32" r="15" stroke-width="30" fill="none" /></svg>
+            </span>
+        </div>
+        <div id="cursor-outer">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <div data-scroll data-scroll-sticky data-scroll-target="#js-scroll">
+        <div class="nav has-no-select">
+            <div class="nav__btn has-attraction"><span></span><span></span><span></span></div>
+            <div class="nav__text"><div><p>MENU</p></div></div>
+        </div>
+        <div class="menu container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9">
+                    <ul class="menu__category has-no-select">
+                        <li style="margin-bottom: 5px;"><p class="l4"><a class="has-scale" href="main.html" data-splitting>Main</a></p><span class="menu__category__num"><span>1<br>1</span></span></li>
+                        <li style="margin-bottom: 5px;"><p class="l4"><a class="has-scale" href="color.html" data-splitting>Color</a></p><span class="menu__category__num"><span>2<br>2</span></span></li>
+                        <li style="margin-bottom: 5px;"><p class="l4"><a class="has-scale" href="film.html" data-splitting>Film</a></p><span class="menu__category__num"><span>3<br>3</span></span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 col-xs-offset-7 col-sm-3 col-sm-offset-0" style="opacity: 0;">
+                    <ul class="menu__main has-scale">
+                        <li><a href="main.html">Main</a></li>
+                        <li><a href="color.html">Color</a></li>
+                        <li><a href="film.html">Film</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loader" style="background-repeat: no-repeat;background-attachment: fixed; background-size: cover;">
+        <div class="container">
+            <div style="width: 100%;padding-top: 0px;padding-left: 0px;">
+                <div class="col-xs-12 col-sm-9" style="width: 100%;max-width:100%;padding-left: 0px !important;">
+                    <ul class="menu__category has-no-select" style="width: 100%;">
+                        <li style="margin-bottom: 5px;float: left;padding-right: 70%;"><p class="l4"><a class="has-scale">Selwyn</a></p>
+                            <span style="opacity: 0; width: 0px;" class="menu__category__num"><span>1<br>1</span></span>
+                        </li>
+                        <li style="margin-bottom: 5px;float: left; "><p class="l4"><a class="has-scale">Hoeks</a></p>
+                            <span style="opacity: 0; width: 0px;" class="menu__category__num"><span>2<br>2</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    /* mobile edits */
+    @media only screen and (max-width:768px) {
+        #page{padding-top: 21px;}
+        .nav{width: calc(2 * var(--outer-margin) + 1.5em);padding-top: 12px;}
+        .nav__btn{width: calc(2 * var(--outer-margin) + 1.5em);}
+    }
+    </style>
+
+    <div id="wrapper" data-barba="wrapper">
+    <div class="next"></div><div id="page" class="is-unseen" data-barba="container" scroll-direction="" data-barba-namespace="index&ndash;rubenwyttenbach" data-bgcolor="#ffffff" data-color="#0a0a0a">
+    <div id="js-scroll" class="o-scroll" data-scroll-container><div id="content" class="site-content container container-horizontal"><div data-scroll-section>
+
+        <div class="row" data-scroll>
+            <div class="col-xs-12 col-sm-4 has-chars">
+                <!-- <div><p class="l5">S</p></div> -->
+                <!-- <img id="logo" src="assets/logo/logo-sh.svg" alt="Selwyn Hoeks"> -->
+            </div>
+            <!-- <div class="col-xs-remove col-sm-3"><p class="--upper">Selwyn Hoeks<br>Photography</p></div>
+            <div class="col-xs-4 col-sm-3 has-chars" has-chars data-scroll data-scroll-speed="-3" data-scroll-position="top"><div><p class="l5">H</p></div></div> -->
+        </div>
+
+        <!-- Image container -->
+        <div class="project-grid row" style="padding-top: 0;" id="add-images-here"></div> 
+
+        <div class="spacer--2" style="height: 50px !important;"></div>
+
+        <div id="footer" class="row">
+            <div class="col-xs-12">
+                <ul class="menu__category has-no-select">
+                    <li class="--transformY" data-scroll><p class="l4"><a href="main.html" class="has-scale" data-splitting>Main</a></p><span class="menu__category__num"><span>1<br>1</span></span></li>
+                    <li class="--transformY" data-scroll><p class="l4"><a href="color.html" class="has-scale" data-splitting>Color</a></p><span class="menu__category__num"><span>2<br>2</span></span></li>
+                    <li class="--transformY" data-scroll><p class="l4"><a href="film.html" class="has-scale" data-splitting>Film</a></p><span class="menu__category__num"><span>3<br>3</span></span></li>
+                </ul>
+            </div>
+            <!-- <div class="col-xs-12 col-sm-6 col-xs-remove"><p>©2022, <a class="has-scale --upper" href="/legal">Legal</a></p></div>
+            <div class="col-xs-6 col-sm-3 --bottom-self">
+                <p><a class="has-scale --upper" href="mailto:bild@rubenwyttenbach.ch">E-Mail</a>, <a class="has-scale --upper" href="https://www.instagram.com/rubenwyttenbach" target="_blank">Instagram</a></p>
+            </div>
+            <div class="col-xs-6 col-sm-3 --bottom-self">
+                <p><a class="has-scale --upper" href="https://close-knit.ch" target="_blank">Credits</a></p>
+            </div> -->
+        </div>
+
+        <div class="spacer--2" style="height: 50px !important;"></div>
+        
+    </div></div></div></div></div>
+    
+</div>
+
+<!-- Magnific -->
+<script src="assets/popup/jquery.magnific-popup.min.js"></script>
+<script src="assets/popup/magnific-popup-options.js"></script>
+
+<!-- load data -->
+<script type='text/javascript' src='color.js'load data'></script>
+
+<!-- add images -->
+<script>
+
+// show which banner has loaded
+//console.log(window.innerWidth, window.innerHeight, file_path)
+
+// add parallax scroll speed to image data
+// function addScrollSpeed(data,n){
+//     // sample data scroll speeds
+//     var sample_array = [1.25,1,0.75,0.5,0.0,0.25,0.9];
+//     for( i = 0; i < n; i++) {
+//         data[i].scroll_speed = sample_array[Math.floor(Math.random() * sample_array.length)];
+//     }
+// }
+function addScrollSpeed(data,n){
+    var sample_array = [1.5,1.25,1,0.75,0.5,0,0.25,0.9];
+    var sample_array_length = sample_array.length;
+    var sample_value_set = 0;
+    var sample_value_prev = 0;
+    for( i = 0; i < n; i++) {
+        sample_value_set = sample_array[Math.floor(Math.random() * sample_array_length)];
+        if(sample_value_set==sample_value_prev){
+            sample_value_set = sample_array[Math.floor(Math.random() * sample_array_length)];   
+        }
+        data[i].scroll_speed = sample_value_set;
+        sample_value_prev = sample_value_set;
+    }
+}
+
+// this functions shuffles the rows of an array
+function shuffleArray(array) {
+
+    // remove and store first 2 elems
+    var tempf1 = array.shift();
+    var tempf2 = array.shift(); 
+
+    for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+    }
+
+    // reinsert first 2 elems at start array
+    array.unshift(tempf2); 
+    array.unshift(tempf1); 
+}
+
+// this adds the images to the html object
+function addImages(obj,data,start,stop) {
+
+    // define local variables
+    var img_divs = " ";
+    var id = " ";
+    var img_width = 0;
+    var img_path = "color_webp/";
+    var load_size_set = 50;
+    var load_size_set_now = 0;
+    var zoom_img = "file_large"
+
+    // if mobile
+    if(window.innerWidth<770) {
+        load_size_set=100;
+        zoom_img = "file_medium" 
+    }
+
+    // loop over data 
+    for( i = start; i < stop; i++){
+
+        id = data[i].file_large.split(".")[0];
+        load_size_set_now = load_size_set
+        if(id == "L1002593_2048x1378") load_size_set_now = 100;
+        if(id == "S1100435_2048x1365") load_size_set_now = 100;
+        if(id == "DSC02491_2048x1365") load_size_set_now = 100;
+        if(id == "S1110561_2048x1365") load_size_set_now = 100;
+        if(id == "DSC03305_1_2048x1365") load_size_set_now = 100;
+                
+        img_divs +=	
+        `<div class="project" data-img="${data[i].format}" id="${id}"
+        data-scroll data-scroll-mobile data-scroll-speed="${data[i].scroll_speed}" 
+        data-scroll-offset="-100%,0">
+        <a href="${img_path}${data[i][zoom_img]}" class="image-popup has-scale --upper zoom">
+            <div class="project__thumb"><img width="${data[i].medium_width}" height="${data[i].medium_height}" 
+                class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="ColorImage_${i}"
+                src="${img_path}${data[i].file_medium}" 
+                srcset="${img_path}${data[i].file_large} ${data[i].large_width}w, 
+                ${img_path}${data[i].file_medium} ${data[i].medium_width}w, 
+                ${img_path}${data[i].file_small} ${data[i].small_width}w, 
+                ${img_path}${data[i].file_tiny} ${data[i].tiny_width}w"
+                sizes="(max-width: ${data[i].medium_width}px) ${load_size_set_now}vw, ${data[i].medium_width}px" />
+                <div class="project__caption --mobile">${i+1}</div>
+                <div class="project__category">Artwork</div>
+            </div>
+        </a>
+        </div>`
+        
+    }
+        
+    // add newly created html to object
+    obj.innerHTML = img_divs;
+
+}
+addScrollSpeed(data,data.length);
+//shuffleArray(data);
+addImages(document.getElementById("add-images-here"),data,0,data.length);
+
+</script>
+
+
+</body>
+
+</html>

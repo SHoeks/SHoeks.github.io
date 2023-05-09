@@ -1,0 +1,12 @@
+{
+'file_large' : 'set_1_2022_05_11__DSC06300_v2_1368x2048.webp',
+'large_width' : '1368', 'large_height' : '2048',
+'file_medium' : 'set_1_2022_05_11__DSC06300_v2_1026x1536.webp',
+'medium_width' : '1026', 'medium_height' : '1536',
+'file_small' : 'set_1_2022_05_11__DSC06300_v2_641x960.webp',
+'small_width' : '641', 'small_height' : '960',
+'file_tiny' : 'set_1_2022_05_11__DSC06300_v2_513x768.webp',
+'tiny_width' : '513', 'tiny_height' : '768',
+'description' : 'Test gallery 2',
+'format' : 'portrait',
+},
