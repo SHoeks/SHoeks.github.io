@@ -7,7 +7,7 @@ rm -rf .git
 
 git init
 git add .
-git commit -m "Initial commit"
+git commit -m "Initial commit new page"
 
 # Step 3: push to GitHub.
 
