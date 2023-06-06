@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en-GB" class="is-loading">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selwyn Hoeks</title>
+    <meta name="description" content="Selwyn Hoeks">
+    <meta name="author" content="Selwyn Hoeks">
+    <meta property="og:title" content="Selwyn Hoeks, Index">
+    <meta property="og:type" content="Website">
+    <meta property="og:url" content="https://shoeks.github.io/">
+    <meta property="og:description" content="Selwyn Hoeks Photography, Index">
+    <meta property="og:image" content="wp-content/themes/rwy/assets/img/og-image.png">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <link rel="canonical" href="" />
+    <link rel="stylesheet" href="assets/code/5e359_film.css" media="all" />
+    <script type='text/javascript' src='assets/code/jquery-3.6.0.min.js' id='jq-js'></script>
+    <script type='text/javascript' src='assets/code/babel-polyfill.min.js' id='pf-js'></script>
+    <script type='text/javascript' src='assets/code/polyfill.min.js' id='pf2-js'></script>
+    <script src="assets/code/5977e.js"></script>
+    <script src="assets/code/functions.js"></script>
+    <link rel="preload" href="assets/fonts/Kern-Regular.ttf" as="font" type="font/ttf" >
+    <link rel="preload" href="assets/fonts/Kern-Regular.woff" as="font" type="font/woff" >
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon-180x180.png">
+    <link rel="shortcut icon" type="image/svg" href="assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
+	<link rel="stylesheet" href="assets/popup/magnific-popup.css">
+    <meta name="msapplication-square310x310logo" content="assets/icons/mstile-310x310.png">
+    <meta name="msapplication-TileColor" content="#000000">
+
+    <!-- Image AlbumData -->
+    <script type='text/javascript' src="ADD_PAGE_DATA_HERE"></script> 
+
+    <!-- preload banner  -->
+    <script type="text/javascript">
+        
+        var ww = window.innerWidth; 
+        var size_select = 0;
+        for( let j = 0; j < BannerData.length; j++){
+            if(BannerData[j].width>ww) break
+            size_select++;
+        }
+        if( is_touch_enabled() ) size_select+=2;
+        var file_path = BannerData[size_select].source;
+        
+        img1 = new Image();
+        img1.src = file_path;
+        $("body").css("background-color", "black");
+        $("#loader").hide();
+        $(img1).on('load', function(){
+            $("#loader").css("background-image","url("+$(this).attr("src")+")").fadeIn(2000); 
+            $("body").css("background-image","url("+$(this).attr("src")+")").fadeIn(2000); 
+        }); 
+    </script>
+
+</head>
+
+<body style="background-repeat: no-repeat; background-attachment: fixed; background-position: bottom; background-size: cover; cursor:none;"><div class="app">
+
+    <div class="cursor">
+        <div id="cursor-inner">
+            <span class="progress progress--fat">
+                <svg height="64" width="64"><circle cx="32" cy="32" r="15" stroke-width="30" fill="none" /></svg>
+            </span>
+        </div>
+        <div id="cursor-outer">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <div data-scroll data-scroll-sticky data-scroll-target="#js-scroll">
+        <div class="nav has-no-select">
+            <div class="nav__btn has-attraction"><span></span><span></span><span></span></div>
+            <div class="nav__text"><div><p>MENU</p></div></div>
+        </div>
+        <div class="menu container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9">
+                    <ul class="menu__category has-no-select" id="add-menu-items-here"></ul>
+                </div>
+                <div class="col-xs-5 col-xs-offset-7 col-sm-3 col-sm-offset-0" style="opacity: 0;">
+                    <ul class="menu__main has-scale">
+                        <li><a href="main.html">Main</a></li>
+                        <li><a href="color.html">Color</a></li>
+                        <li><a href="film.html">Film</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loader" style="background-repeat: no-repeat;background-attachment: fixed; background-size: cover;">
+        <div class="container">
+            <div style="width: 100%;padding-top: 0px;padding-left: 0px;">
+                <div class="col-xs-12 col-sm-9" style="width: 100%;max-width:100%;padding-left: 0px !important;">
+                    <ul class="menu__category has-no-select" style="width: 100%;">
+                        <li style="margin-bottom: 5px;float: left;padding-right: 70%;"><p class="l4"><a class="has-scale">Selwyn</a></p>
+                            <span style="opacity: 0; width: 0px;" class="menu__category__num"><span>1<br>1</span></span>
+                        </li>
+                        <li style="margin-bottom: 5px;float: left; "><p class="l4"><a class="has-scale">Hoeks</a></p>
+                            <span style="opacity: 0; width: 0px;" class="menu__category__num"><span>2<br>2</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    /* mobile edits */
+    @media only screen and (max-width:768px) {
+        #page{padding-top: 21px;}
+        .nav{width: calc(2 * var(--outer-margin) + 1.5em);padding-top: 12px;}
+        .nav__btn{width: calc(2 * var(--outer-margin) + 1.5em);}
+    }
+    </style>
+
+    <div id="wrapper" data-barba="wrapper">
+    <div class="next"></div><div id="page" class="is-unseen" data-barba="container" scroll-direction="" data-barba-namespace="index&ndash;rubenwyttenbach" data-bgcolor="#ffffff" data-color="#0a0a0a">
+    <div id="js-scroll" class="o-scroll" data-scroll-container><div id="content" class="site-content container container-horizontal"><div data-scroll-section>
+
+        <div class="row" data-scroll><div class="col-xs-12 col-sm-4 has-chars"></div></div>
+
+        <!-- Image container -->
+        <div class="project-grid row" style="padding-top: 0;" id="add-images-here"></div> 
+
+        <div class="spacer--2" style="height: 50px !important;"></div>
+
+        <div id="footer" class="row">
+            <div class="col-xs-12">
+                <ul class="menu__category has-no-select" id="add-footer-items-here"></ul>
+            </div>
+        </div>
+
+        <div class="spacer--2" style="height: 50px !important;"></div>
+
+    </div></div></div></div></div>
+
+</div>
+
+<!-- Magnific -->
+<script src="assets/popup/jquery.magnific-popup.min.js"></script>
+<script src="assets/popup/magnific-popup-options.js"></script>
+
+<!-- Custom img sizings -->
+<link rel="stylesheet" href="assets/code/imagesizes.css">
+
+<!-- image fade in -->
+<style>
+/* desktop, fade in turned off */
+.project__thumb{
+    opacity: 1;
+}
+
+/* .fadein {
+    animation-name: fadein; 
+    animation-fill-mode: both; 
+    animation-duration: 350ms; 
+    animation-timing-function: ease-in;
+    animation-delay: 250ms;
+} */
+
+/* @keyframes fadein {
+    20% {opacity: 0;transform: translateY(0);}
+    100% {opacity: 1;transform: translateY(0);}
+} */
+
+/* mobile, use fade in effect */
+@media only screen and (max-width:768px) {
+    .project__thumb{
+        opacity: 0;
+    }
+
+    .fadein {
+        animation-name: fadein; 
+        animation-fill-mode: both; 
+        animation-duration: 400ms; 
+        animation-timing-function: ease-in-out;
+        animation-delay: 500ms;
+    }
+
+    @keyframes fadein {
+        0% {opacity: 0;transform: translateY(20%);}
+        100% {opacity: 1;transform: translateY(0);}
+    }
+}
+</style>
+
+<!-- add images -->
+<script>
+
+// function for redirecting to sub-pages
+function visitPage(url){
+    location.href = url;
+}
+
+// show which banner has loaded
+console.log(window.innerWidth, window.innerHeight, file_path)
+
+
+function printImageNames() {
+    var imgs = document.getElementsByClassName("project");
+    for (var i = 0; i < imgs.length; i++) {
+        console.log(imgs[i].id)
+    }
+}
+
+// sample AlbumData scroll speeds
+function addScrollSpeed(AlbumData,n){    
+    var sample_array = [1.5,1.25,1,0.75,0.5,0,0.25,0.9];
+    var sample_array_length = sample_array.length;
+    var sample_value_set = 0;
+    var sample_value_prev = 0;
+    for( i = 0; i < n; i++) {
+        sample_value_set = sample_array[Math.floor(Math.random() * sample_array_length)];
+        if(sample_value_set==sample_value_prev){
+            sample_value_set = sample_array[Math.floor(Math.random() * sample_array_length)];   
+        }
+        AlbumData[i].scroll_speed = sample_value_set;
+        sample_value_prev = sample_value_set;
+    }
+
+}
+
+function samplePhotoWidths(AlbumData,n,zoom_size,stylewidth0_array,stylewidth1_array) {
+
+    var stylewidth = 0;
+    var stylewidth0_array = [25,50,50,75];
+    var stylewidth1_array = [25,50,50,75,100];  
+    var stylewidth0_length = stylewidth0_array.length;
+    var stylewidth1_length = stylewidth1_array.length;
+    var sample_sizes_array = [];
+    for( i = 0; i < n; i++) {
+        if(AlbumData[i].sizes[zoom_size].width>AlbumData[i].sizes[zoom_size].height) {
+            sample_sizes_array.push(0);
+        }else{
+            sample_sizes_array.push(50);
+        }
+    }
+    console.log(sample_sizes_array)
+    for( i = 0; i < n; i = i+2) {
+        if( sample_sizes_array[i] == 50 ){
+            sample_sizes_array[i] = 50;
+            sample_sizes_array[i+1] = 50;
+        }
+        if( sample_sizes_array[i+1] == 50 ){
+            sample_sizes_array[i] = 50;
+            sample_sizes_array[i+1] = 50;
+        }
+        if( sample_sizes_array[i] == 0 & sample_sizes_array[i+1] == 0 ){
+            if(i==0){
+                stylewidth = stylewidth0_array[Math.floor(Math.random() * stylewidth0_length)];
+            }else{
+                stylewidth = stylewidth1_array[Math.floor(Math.random() * stylewidth1_length)];
+            }
+            sample_sizes_array[i] = stylewidth;
+            sample_sizes_array[i+1] = 100-stylewidth;
+            if(stylewidth==100) i--;
+        }
+    }
+    if(sample_sizes_array.length>n) sample_sizes_array.pop();
+    console.log(sample_sizes_array);
+    
+    return(sample_sizes_array);
+}
+
+function arrayMax(array) {
+    var max = 0;
+    for( i = 0; i < (array.length); i++) {
+        if(array[i]>max) max = array[i];
+    }
+    return(max);
+}
+
+function arraySum(array) {
+    var sum = 0;
+    for( i = 0; i < (array.length); i++) sum += array[i];
+    return(sum);
+}
+
+function processImageData(AlbumData,n) {
+
+    // define local variables
+    var id = " ";
+    var img_id = " ";
+    var img_format = "l";
+    var img_set_gallery = [];
+    var img_set_zoom = [];
+    
+    // style sampler
+    var styleid = "w50_"
+    var style2rnd = "m";
+    var style2rnd = 1;
+    var style1rnd_array = ["s","m","l"];
+    var style1rnd_length = style1rnd_array.length;
+    
+    // get gallery and zoom size to use
+    var window_width = [];
+    window_width["w100"] = window.innerWidth;
+    window_width["w50"] = window_width["w100"] * 0.50;
+    window_width["w75"] = window_width["w100"] * 0.75;
+    window_width["w25"] = window_width["w100"] * 0.25;
+    window_width["w90"] = window_width["w100"] * 0.90;
+    var gallery_size_index = "w50";
+    var gallery_size = 0;
+    var zoom_size = 0;
+    for(i = 0; i < AlbumData[0].sizes.length; i++) {
+        if(AlbumData[0].sizes[i].width>window_width["w90"]) break
+        zoom_size++;
+    }
+    console.log("zoom_size: " + zoom_size)
+
+    // width img style id
+    var sample_sizes_array = samplePhotoWidths(AlbumData,n,zoom_size);
+    var sample_sizes_array_max = arrayMax(sample_sizes_array);
+    if(sample_sizes_array_max<99) sample_sizes_array = samplePhotoWidths(AlbumData,n,zoom_size);
+    var sample_sizes_array_sum = arraySum(sample_sizes_array);
+    if(sample_sizes_array_sum % 100 != 0) sample_sizes_array[sample_sizes_array.length-1] = 100;
+    if(sample_sizes_array[sample_sizes_array.length-1]==0) sample_sizes_array[sample_sizes_array.length-1] = 50;
+    var div_Touch = is_touch_enabled();
+    
+    // loop over AlbumData 
+    for( i = 0; i < n; i++){
+
+        // img id
+        img_id = AlbumData[i].pid[0];
+        // console.log(img_id)
+
+        // get gallery size to use
+        gallery_size = 1;
+        gallery_size_index = "w" + sample_sizes_array[i];
+        for(j = 0; j < AlbumData[i].sizes.length; j++) {
+            if(AlbumData[i].sizes[j].width>window_width[gallery_size_index]) break
+            gallery_size++;
+        }
+        if(div_Touch) gallery_size++;
+        // console.log(gallery_size)
+        
+        // img dims
+        img_format = "l";
+        img_set_gallery = AlbumData[i].sizes[gallery_size];
+        img_set_zoom = AlbumData[i].sizes[zoom_size];
+        if(sample_sizes_array[i]>50) AlbumData[i].sizes[zoom_size];
+        if(img_set_gallery.width < img_set_gallery.height) img_format = "p"
+        // console.log(img_set_gallery.width + "x" + img_set_gallery.height+ " => " + img_format)
+        
+        // img style
+        if(img_format=="l") {
+            styleid = "w" + sample_sizes_array[i] + "_";
+            style1rnd = style1rnd_array[Math.floor(Math.random() * style1rnd_length)];
+            style2rnd = Math.floor(Math.random() * 5) + 1;
+            styleid = styleid + style1rnd + style2rnd; 
+        }else if(img_format=="p"){
+            styleid = "w50p_";
+            style1rnd = "m"
+            style2rnd = Math.floor(Math.random() * 5) + 1;
+            styleid = styleid + style1rnd + style2rnd; 
+        }
+        // console.log(styleid)
+
+        // add data
+        AlbumData[i].img_width = sample_sizes_array[i];
+        AlbumData[i].img_format = img_format;
+        AlbumData[i].img_id = img_id;
+        AlbumData[i].img_set_gallery = img_set_gallery;
+        AlbumData[i].img_set_zoom = img_set_zoom;
+        AlbumData[i].img_styleid = styleid;
+
+    }
+
+}
+
+function addImages(obj,AlbumData,n) {
+
+    var img_divs = "";
+    var img_show = 200;
+    if( window.innerWidth < 768 ) img_show = 0;
+    var total_width = 0;
+
+    // loop over AlbumData 
+    for( i = 0; i < n; i++){
+
+        total_width += AlbumData[i].img_width;
+        // console.log(total_width);
+
+        if( total_width > img_show) {
+    
+            // insert img into gallery
+            img_divs +=	`<div class="project" data-img="${AlbumData[i].img_format}" id="${AlbumData[i].img_styleid}"
+            data-scroll data-scroll-mobile data-scroll-speed="${AlbumData[i].scroll_speed}" data-scroll-offset="-100%,0">
+                <a href="${AlbumData[i].img_set_zoom.source}" class="image-popup has-scale --upper zoom">
+                    <div class="project__thumb"><img width="1400" height="934" 
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Image_${i}"
+                        src="${AlbumData[i].img_set_gallery.source}" id="${AlbumData[i].img_id}"/>
+                        <div class="project__caption --mobile">${i+1}</div>
+                        <div class="project__category">Artwork</div>
+                    </div>
+                </a>
+            </div>`
+
+        }else{
+
+            // insert img into gallery
+            img_divs +=	`<div class="project" data-img="${AlbumData[i].img_format}" id="${AlbumData[i].img_styleid}"
+            data-scroll data-scroll-mobile data-scroll-speed="${AlbumData[i].scroll_speed}" data-scroll-offset="-100%,0">
+                <a href="${AlbumData[i].img_set_zoom.source}" class="image-popup has-scale --upper zoom">
+                    <div class="project__thumb fadein" style="animation-duration: 100ms; animation-delay: none;"><img width="1400" height="934" 
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Image_${i}"
+                        src="${AlbumData[i].img_set_gallery.source}" id="${AlbumData[i].img_id}"/>
+                        <div class="project__caption --mobile">${i+1}</div>
+                        <div class="project__category">Artwork</div>
+                    </div>
+                </a>
+            </div>`
+            
+        }
+    }
+    
+    // add newly created html to object
+    obj.innerHTML = img_divs;
+
+}
+
+function addMenuItems(obj,MenuData,menu_n){
+
+    var ul_divs = "";
+
+    // loop over menu data 
+    for( i = 0; i < menu_n; i++){
+        ul_divs += `<div onclick="visitPage('${MenuData[i].url}')"><li style="margin-bottom: 5px;">
+            <p class="l4"><a class="has-scale" data-splitting>${MenuData[i].title}</a></p>
+            <span class="menu__category__num"><span>${i+1}<br>${i+1}</span></span>
+        </li></div>`
+
+    }
+
+    // add newly created html to object
+    obj.innerHTML = ul_divs;
+
+}
+
+// add images
+addScrollSpeed(AlbumData,AlbumData.length);
+processImageData(AlbumData,AlbumData.length)
+addImages(document.getElementById("add-images-here"),AlbumData,AlbumData.length);
+
+// add menu items
+addMenuItems(document.getElementById("add-menu-items-here"),MenuData,MenuData.length)
+addMenuItems(document.getElementById("add-footer-items-here"),MenuData,MenuData.length)
+    
+</script>
+
+</body>
+</html>
