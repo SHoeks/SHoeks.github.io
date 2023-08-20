@@ -4701,7 +4701,7 @@ function(e, t) {
                             p = e.dataset[t.name + "Delay"],
                             m = e.dataset[t.name + "Direction"],
                             v = "string" == typeof e.dataset[t.name + "Sticky"],
-                            y = !!e.dataset[t.name + "Speed"] && parseFloat(e.dataset[t.name + "Speed"]) / 10,
+                            y = !!e.dataset[t.name + "Speed"] && parseFloat(e.dataset[t.name + "Speed"]) / 10000, // new
                             b = "string" == typeof e.dataset[t.name + "Offset"] ? e.dataset[t.name + "Offset"].split(",") : t.offset,
                             g = e.dataset[t.name + "Target"],
                             w = (o = void 0 !== g ? document.querySelector("".concat(g)) : e).getBoundingClientRect();
