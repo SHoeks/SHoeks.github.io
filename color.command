@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd "/Volumes/Websites/WEBSITE_Selwyn/Website/"
+cd "/Users/osx/Documents/Websites/WEBSITE_Selwyn/Website/"
 cd "color"
 qlty=80
 current_date=$(date +%Y_%m_%d_%H_%M)
@@ -8,12 +8,14 @@ exp_dir="exports_"$current_date
 mkdir $exp_dir
 mv *.jpg $exp_dir
 cd $exp_dir
-mkdir backup
-for i in $(ls *.jpg); do 
-    ../../assets/./stretchjpg "$i"
-    mv "$i" backup/"$i"
-    mv ${i%%.*}"_out.JPG" "$i"
-done
+if [[ 1 -gt 2 ]]; then
+    mkdir backup
+    for i in $(ls *.jpg); do 
+        ../../assets/./stretchjpg "$i"
+        mv "$i" backup/"$i"
+        mv ${i%%.*}"_out.JPG" "$i"
+    done
+fi
 
 touch color_tmp.js
 
